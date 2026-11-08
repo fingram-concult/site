@@ -1,0 +1,245 @@
+<!DOCTYPE html><html lang="ru"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Финграм — Личные финансы без хаоса</title><meta name="description" content="Бесплатный трекер доходов, расходов и капитала на вашей Google Таблице. Блог о деньгах, привычках и решениях."><link rel="canonical" href="https://agladkikh.ru/"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta property="og:type" content="website"><meta property="og:title" content="Финграм — Личные финансы без хаоса"><meta property="og:description" content="Бесплатный трекер доходов, расходов и капитала на вашей Google Таблице. Блог о деньгах, привычках и решениях."><meta property="og:url" content="https://agladkikh.ru/"><meta property="og:image" content="https://agladkikh.ru/images/author.jpg"><meta property="og:site_name" content="Финграм"><meta property="og:locale" content="ru_RU"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Финграм","description":"Бесплатный трекер доходов, расходов и капитала на вашей Google Таблице. Блог о деньгах, привычках и решениях.","url":"https://agladkikh.ru/","email":"gladkikh.consult@mail.ru","areaServed":"RU","sameAs":["https://vk.ru/gladkikh_consult","https://www.b17.ru/agladkih/","https://profi.ru/profile/GladkikhAA22/"],"founder":{"@type":"Person","name":"Александр Гладких"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Финграм","url":"https://agladkikh.ru/","inLanguage":"ru-RU"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Сервис правда бесплатный?","acceptedAnswer":{"@type":"Answer","text":"Да. Вы создаёте копию Google Таблицы, разворачиваете свой Apps Script и пользуетесь сервисом без оплаты."}},{"@type":"Question","name":"Где хранятся мои данные?","acceptedAnswer":{"@type":"Answer","text":"Только в вашей Google Таблице. Приложение читает и пишет данные по вашему персональному адресу скрипта. Автор сервиса доступа к ним не имеет."}},{"@type":"Question","name":"Что нужно установить?","acceptedAnswer":{"@type":"Answer","text":"Ничего. Сервис работает в браузере. Единственная настройка — развернуть Apps Script, и делать это удобнее с компьютера."}},{"@type":"Question","name":"Можно пользоваться с телефона?","acceptedAnswer":{"@type":"Answer","text":"Да, интерфейс адаптирован под мобильные. Настройка скрипта — один раз с компьютера, дальше можно вести учёт с телефона."}},{"@type":"Question","name":"Что будет на консультации?","acceptedAnswer":{"@type":"Answer","text":"Можно разобрать траты по выписке из банка или по трекеру, обсудить вопросы и привычки. Онлайн, 50 минут; знакомство 15–20 минут бесплатно."}}]}</script><script>
+          (function () {
+            var hosts = ['agladkikh.ru', 'www.agladkikh.ru', 'fingram-concult.github.io', 'fingram.ru', 'www.fingram.ru'];
+            if (hosts.indexOf(location.hostname) === -1) return;
+            (function (m, e, t, r, i, k, a) {
+              m[i] =
+                m[i] ||
+                function () {
+                  (m[i].a = m[i].a || []).push(arguments);
+                };
+              m[i].l = 1 * new Date();
+              for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                  return;
+                }
+              }
+              (k = e.createElement(t)),
+                (a = e.getElementsByTagName(t)[0]),
+                (k.async = 1),
+                (k.src = r),
+                a.parentNode.insertBefore(k, a);
+            })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+            ym(110540800, 'init', {
+              clickmap: true,
+              trackLinks: true,
+              accurateTrackBounce: true,
+              webvisor: true,
+            });
+          })();
+        </script><noscript><div><img src="https://mc.yandex.ru/watch/110540800" style="position:absolute; left:-9999px;" alt=""></div></noscript><link rel="stylesheet" href="/assets/about.D8ktHkC7.css"></head> <body> <div class="returning" id="returning" hidden> <div class="container returning-inner"> <span>Вы уже пользуетесь сервисом.</span> <a class="btn btn-sm" href="/app/index.html">Продолжить →</a> <a class="returning-old" href="https://fingram-concult.github.io/finance/">Старая версия (ещё ~30 дней)</a> <button class="returning-close" type="button" data-returning-close aria-label="Скрыть">×</button> </div> </div> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="/finance/" aria-label="Финграм — на главную"> <span class="brand-mark">Ф</span> <span class="brand-name">Финграм</span> </a> <button class="nav-burger" type="button" data-nav-toggle aria-label="Открыть меню" aria-expanded="false"> <span></span><span></span><span></span> </button> <nav class="site-nav" aria-label="Основная навигация">  <div class="nav-item has-children"> <button class="nav-link" type="button" data-submenu-toggle aria-expanded="false"> Сервис <span class="nav-caret">▾</span> </button> <div class="nav-submenu"> <a href="/finance/app/index.html#month">Месяц</a><a href="/finance/app/index.html#year">Год</a><a href="/finance/app/index.html#dynamics">Динамика</a><a href="/finance/app/index.html#add">+ Запись</a><a href="/finance/app/index.html#history">История</a><a href="/finance/app/index.html#balance">Баланс</a><a href="/finance/app/index.html#settings">Настройки</a> </div> </div> <div class="nav-sections-mobile"> <span class="nav-sections-title">Сервис</span> <div class="nav-sections-list"> <a href="/finance/app/index.html#month">Месяц</a><a href="/finance/app/index.html#year">Год</a><a href="/finance/app/index.html#dynamics">Динамика</a><a href="/finance/app/index.html#add">+ Запись</a><a href="/finance/app/index.html#history">История</a><a href="/finance/app/index.html#balance">Баланс</a><a href="/finance/app/index.html#settings">Настройки</a> </div> </div> <a class="nav-link" href="/finance/blog/"> Блог </a><a class="nav-link" href="/finance/about/"> Обо мне </a><a class="nav-link" href="/finance/consult/"> Консультация </a> </nav> </div> </header> <main>    <section class="container hero-block"> <div class="hero-copy"> <span class="eyebrow">Личные финансы</span> <h1>Деньги под контролем</h1> <p class="lead">
+Бесплатный трекер доходов, расходов и капитала на вашей Google Таблице. Блог с полезными
+        статьями.
+</p> <div class="hero-actions"> <a class="btn" data-primary-cta href="/app/index.html">Открыть сервис</a> <a class="btn btn-ghost" href="/blog/">Читать блог</a> </div> <p class="hero-note">Бесплатно · без регистрации · данные остаются у вас</p> </div> <div class="hero-media"> <div class="app-preview" data-app-preview data-initial="month"> <div class="app-chrome"> <div class="app-dots"><span></span><span></span><span></span></div> <div class="app-chrome-title">Финграм · личные финансы</div> <div class="app-chrome-menu"> <span class="active">Месяц</span><span>Год</span><span>Динамика</span><span>+ Запись</span><span>История</span><span>Баланс</span> </div> </div>  <div class="app-panels"> <div class="app-panel active" data-app-panel="month" role="tabpanel"> <div class="mock-stats mock-stats-5"> <div class="mock-stat"><span>Все расходы</span><b class="neg">85 380 ₽</b></div> <div class="mock-stat"><span>Обязательные</span><b>41 200 ₽</b></div> <div class="mock-stat"><span>Необязательные</span><b>44 180 ₽</b></div> <div class="mock-stat"><span>Доходы</span><b class="pos">86 000 ₽</b></div> <div class="mock-stat"><span>Разница</span><b class="pos">+620 ₽</b></div> </div> <div class="mock-grid"> <div class="mock-card"> <div class="mock-card-head">Расходы по категориям</div> <div class="mock-bars"> <div class="mock-bar-row"> <span>Продукты</span> <div class="mock-bar"><i style="width:100%"></i></div> <b>24 100 ₽</b> </div><div class="mock-bar-row"> <span>Квартплата</span> <div class="mock-bar"><i style="width:51%"></i></div> <b>12 400 ₽</b> </div><div class="mock-bar-row"> <span>Кафе</span> <div class="mock-bar"><i style="width:41%"></i></div> <b>9 800 ₽</b> </div><div class="mock-bar-row"> <span>Проезд</span> <div class="mock-bar"><i style="width:30%"></i></div> <b>7 200 ₽</b> </div><div class="mock-bar-row"> <span>Аптека</span> <div class="mock-bar"><i style="width:25%"></i></div> <b>5 970 ₽</b> </div><div class="mock-bar-row"> <span>Разное</span> <div class="mock-bar"><i style="width:17%"></i></div> <b>4 100 ₽</b> </div> </div> </div> <div class="mock-card"> <div class="mock-card-head">Последние записи</div> <div class="mock-list"> <div><span>Продукты</span><b class="neg">−1 240 ₽</b></div> <div><span>Кафе</span><b class="neg">−890 ₽</b></div> <div><span>Проезд</span><b class="neg">−65 ₽</b></div> <div><span>Аптека</span><b class="neg">−540 ₽</b></div> <div><span>Доход</span><b class="pos">+8 300 ₽</b></div> </div> </div> </div> </div> <div class="app-panel" data-app-panel="year" role="tabpanel"> <div class="mock-card"> <div class="mock-card-head">Сводка по категориям за год</div> <div class="mock-table"> <div class="mock-tr mock-th"> <span>Категория</span><span>Итого</span><span>Среднее</span><span>Доля</span><span>Месяцы</span> </div> <div class="mock-tr"> <span class="mock-cat">Продукты</span> <span>289 400 ₽</span> <span>24 117 ₽</span> <span>31%</span> <span class="mock-heat"> <i style="opacity:0.6"></i><i style="opacity:0.44"></i><i style="opacity:0.76"></i><i style="opacity:0.6"></i><i style="opacity:0.92"></i><i style="opacity:0.76"></i><i style="opacity:0.6"></i><i style="opacity:0.76"></i><i style="opacity:0.44"></i><i style="opacity:0.6"></i><i style="opacity:0.76"></i><i style="opacity:0.6"></i> </span> </div><div class="mock-tr"> <span class="mock-cat">Квартплата</span> <span>148 800 ₽</span> <span>12 400 ₽</span> <span>16%</span> <span class="mock-heat"> <i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i> </span> </div><div class="mock-tr"> <span class="mock-cat">Кафе</span> <span>117 600 ₽</span> <span>9 800 ₽</span> <span>13%</span> <span class="mock-heat"> <i style="opacity:0.28"></i><i style="opacity:0.44"></i><i style="opacity:0.6"></i><i style="opacity:0.76"></i><i style="opacity:0.76"></i><i style="opacity:0.6"></i><i style="opacity:0.44"></i><i style="opacity:0.6"></i><i style="opacity:0.76"></i><i style="opacity:0.92"></i><i style="opacity:0.76"></i><i style="opacity:0.76"></i> </span> </div><div class="mock-tr"> <span class="mock-cat">Проезд</span> <span>86 400 ₽</span> <span>7 200 ₽</span> <span>9%</span> <span class="mock-heat"> <i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i> </span> </div><div class="mock-tr"> <span class="mock-cat">Аптека</span> <span>71 640 ₽</span> <span>5 970 ₽</span> <span>8%</span> <span class="mock-heat"> <i style="opacity:0.12"></i><i style="opacity:0.28"></i><i style="opacity:0.12"></i><i style="opacity:0.44"></i><i style="opacity:0.28"></i><i style="opacity:0.12"></i><i style="opacity:0.28"></i><i style="opacity:0.44"></i><i style="opacity:0.6"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.28"></i> </span> </div><div class="mock-tr"> <span class="mock-cat">Прочее</span> <span>61 500 ₽</span> <span>5 125 ₽</span> <span>7%</span> <span class="mock-heat"> <i style="opacity:0.28"></i><i style="opacity:0.12"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.12"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.12"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.12"></i> </span> </div> </div> </div> </div> <div class="app-panel" data-app-panel="balance" role="tabpanel"> <div class="mock-stats mock-stats-3"> <div class="mock-stat"><span>Активы</span><b class="pos">1 175 950 ₽</b></div> <div class="mock-stat"><span>Пассивы</span><b class="neg">628 970 ₽</b></div> <div class="mock-stat"><span>Чистый капитал</span><b>546 980 ₽</b></div> </div> <div class="mock-card"> <div class="mock-card-head">Структура капитала</div> <div class="mock-bars"> <div class="mock-bar-row"> <span><i class="mock-dot" style="background:#5b54e8"></i>Текущие счета</span> <div class="mock-bar"><i style="width:37%;background:#5b54e8"></i></div> <b>314 200 ₽</b> </div><div class="mock-bar-row"> <span><i class="mock-dot" style="background:#1f9d63"></i>Акции</span> <div class="mock-bar"><i style="width:34%;background:#1f9d63"></i></div> <b>285 000 ₽</b> </div><div class="mock-bar-row"> <span><i class="mock-dot" style="background:#48bb78"></i>Подушка</span> <div class="mock-bar"><i style="width:28%;background:#48bb78"></i></div> <b>240 000 ₽</b> </div><div class="mock-bar-row"> <span><i class="mock-dot" style="background:#7c6cff"></i>Облигации</span> <div class="mock-bar"><i style="width:25%;background:#7c6cff"></i></div> <b>210 000 ₽</b> </div><div class="mock-bar-row"> <span><i class="mock-dot" style="background:#f6ad55"></i>Прочее</span> <div class="mock-bar"><i style="width:11%;background:#f6ad55"></i></div> <b>126 750 ₽</b> </div> </div> </div> </div> </div> </div> </div> </section> <section class="section" id="benefits"> <div class="container"> <div class="section-head"> <span class="eyebrow">Почему это работает</span> <h2>Не просто таблица, а система</h2> <p>Пять вещей, которые даёт регулярный учёт — без сложных приложений и подписок.</p> </div> <div class="grid grid-5"> <div class="card"> <div class="card-icon">🔒</div> <h3>Данные — в вашей таблице</h3> <p>Записи хранятся в вашей Google Таблице. Автор сервиса их не видит.</p> </div><div class="card"> <div class="card-icon">🌱</div> <h3>Учёт формирует привычку</h3> <p>Регулярные записи превращаются в спокойную систему.</p> </div><div class="card"> <div class="card-icon">🎯</div> <h3>Фокус на целях</h3> <p>Видно, как повседневные траты влияют на капитал и движение к цели.</p> </div><div class="card"> <div class="card-icon">📈</div> <h3>История доходов и расходов</h3> <p>Категории, месяцы и годы: можно вернуться назад и сравнить.</p> </div><div class="card"> <div class="card-icon">🧭</div> <h3>Личная инфляция и поведение</h3> <p>Сравнивайте свои траты по годам и замечайте изменения привычек.</p> </div> </div> </div> </section> <section class="section" id="how"> <div class="container"> <div class="section-head"> <span class="eyebrow">Как начать</span> <h2>Три шага — и вы ведёте учёт</h2> <p>Настройка занимает несколько минут. Дальше — только записи и выводы.</p> </div> <div class="steps"> <div class="step"> <h3>Создайте копию таблицы</h3> <p>Одна кнопка — и у вас своя Google Таблица, которая станет базой данных.</p> </div><div class="step"> <h3>Разверните скрипт</h3> <p>Два клика в Apps Script. Настройка один раз и только с компьютера.</p> </div><div class="step"> <h3>Вставьте ссылку</h3> <p>Вставьте адрес скрипта в настройках приложения и начинайте вести учёт.</p> </div> </div> <div class="steps-video"> <button class="btn btn-ghost" type="button" data-video-open>▶ Видео-инструкция по настройке</button> <span>Показываем весь путь: копия таблицы → скрипт → ссылка.</span> </div> </div> </section> <section class="section" id="screens"> <div class="container"> <div class="section-head"> <span class="eyebrow">Как это выглядит</span> <h2>Понятные отчёты вместо сухих таблиц</h2> <p>Переключайте вкладки: месяц, год и баланс — без формул и ручной сборки.</p> </div> <div class="app-preview" data-app-preview data-initial="month"> <div class="app-chrome"> <div class="app-dots"><span></span><span></span><span></span></div> <div class="app-chrome-title">Финграм · личные финансы</div> <div class="app-chrome-menu"> <span class="active">Месяц</span><span>Год</span><span>Динамика</span><span>+ Запись</span><span>История</span><span>Баланс</span> </div> </div> <div class="app-tabs" role="tablist" aria-label="Экраны сервиса"> <button class="app-tab active" type="button" data-app-tab="month" role="tab">Месяц</button> <button class="app-tab" type="button" data-app-tab="year" role="tab">Год</button> <button class="app-tab" type="button" data-app-tab="balance" role="tab">Баланс</button> </div> <div class="app-panels"> <div class="app-panel active" data-app-panel="month" role="tabpanel"> <div class="mock-stats mock-stats-5"> <div class="mock-stat"><span>Все расходы</span><b class="neg">85 380 ₽</b></div> <div class="mock-stat"><span>Обязательные</span><b>41 200 ₽</b></div> <div class="mock-stat"><span>Необязательные</span><b>44 180 ₽</b></div> <div class="mock-stat"><span>Доходы</span><b class="pos">86 000 ₽</b></div> <div class="mock-stat"><span>Разница</span><b class="pos">+620 ₽</b></div> </div> <div class="mock-grid"> <div class="mock-card"> <div class="mock-card-head">Расходы по категориям</div> <div class="mock-bars"> <div class="mock-bar-row"> <span>Продукты</span> <div class="mock-bar"><i style="width:100%"></i></div> <b>24 100 ₽</b> </div><div class="mock-bar-row"> <span>Квартплата</span> <div class="mock-bar"><i style="width:51%"></i></div> <b>12 400 ₽</b> </div><div class="mock-bar-row"> <span>Кафе</span> <div class="mock-bar"><i style="width:41%"></i></div> <b>9 800 ₽</b> </div><div class="mock-bar-row"> <span>Проезд</span> <div class="mock-bar"><i style="width:30%"></i></div> <b>7 200 ₽</b> </div><div class="mock-bar-row"> <span>Аптека</span> <div class="mock-bar"><i style="width:25%"></i></div> <b>5 970 ₽</b> </div><div class="mock-bar-row"> <span>Разное</span> <div class="mock-bar"><i style="width:17%"></i></div> <b>4 100 ₽</b> </div> </div> </div> <div class="mock-card"> <div class="mock-card-head">Последние записи</div> <div class="mock-list"> <div><span>Продукты</span><b class="neg">−1 240 ₽</b></div> <div><span>Кафе</span><b class="neg">−890 ₽</b></div> <div><span>Проезд</span><b class="neg">−65 ₽</b></div> <div><span>Аптека</span><b class="neg">−540 ₽</b></div> <div><span>Доход</span><b class="pos">+8 300 ₽</b></div> </div> </div> </div> </div> <div class="app-panel" data-app-panel="year" role="tabpanel"> <div class="mock-card"> <div class="mock-card-head">Сводка по категориям за год</div> <div class="mock-table"> <div class="mock-tr mock-th"> <span>Категория</span><span>Итого</span><span>Среднее</span><span>Доля</span><span>Месяцы</span> </div> <div class="mock-tr"> <span class="mock-cat">Продукты</span> <span>289 400 ₽</span> <span>24 117 ₽</span> <span>31%</span> <span class="mock-heat"> <i style="opacity:0.6"></i><i style="opacity:0.44"></i><i style="opacity:0.76"></i><i style="opacity:0.6"></i><i style="opacity:0.92"></i><i style="opacity:0.76"></i><i style="opacity:0.6"></i><i style="opacity:0.76"></i><i style="opacity:0.44"></i><i style="opacity:0.6"></i><i style="opacity:0.76"></i><i style="opacity:0.6"></i> </span> </div><div class="mock-tr"> <span class="mock-cat">Квартплата</span> <span>148 800 ₽</span> <span>12 400 ₽</span> <span>16%</span> <span class="mock-heat"> <i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i> </span> </div><div class="mock-tr"> <span class="mock-cat">Кафе</span> <span>117 600 ₽</span> <span>9 800 ₽</span> <span>13%</span> <span class="mock-heat"> <i style="opacity:0.28"></i><i style="opacity:0.44"></i><i style="opacity:0.6"></i><i style="opacity:0.76"></i><i style="opacity:0.76"></i><i style="opacity:0.6"></i><i style="opacity:0.44"></i><i style="opacity:0.6"></i><i style="opacity:0.76"></i><i style="opacity:0.92"></i><i style="opacity:0.76"></i><i style="opacity:0.76"></i> </span> </div><div class="mock-tr"> <span class="mock-cat">Проезд</span> <span>86 400 ₽</span> <span>7 200 ₽</span> <span>9%</span> <span class="mock-heat"> <i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i> </span> </div><div class="mock-tr"> <span class="mock-cat">Аптека</span> <span>71 640 ₽</span> <span>5 970 ₽</span> <span>8%</span> <span class="mock-heat"> <i style="opacity:0.12"></i><i style="opacity:0.28"></i><i style="opacity:0.12"></i><i style="opacity:0.44"></i><i style="opacity:0.28"></i><i style="opacity:0.12"></i><i style="opacity:0.28"></i><i style="opacity:0.44"></i><i style="opacity:0.6"></i><i style="opacity:0.44"></i><i style="opacity:0.44"></i><i style="opacity:0.28"></i> </span> </div><div class="mock-tr"> <span class="mock-cat">Прочее</span> <span>61 500 ₽</span> <span>5 125 ₽</span> <span>7%</span> <span class="mock-heat"> <i style="opacity:0.28"></i><i style="opacity:0.12"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.12"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.12"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.28"></i><i style="opacity:0.12"></i> </span> </div> </div> </div> </div> <div class="app-panel" data-app-panel="balance" role="tabpanel"> <div class="mock-stats mock-stats-3"> <div class="mock-stat"><span>Активы</span><b class="pos">1 175 950 ₽</b></div> <div class="mock-stat"><span>Пассивы</span><b class="neg">628 970 ₽</b></div> <div class="mock-stat"><span>Чистый капитал</span><b>546 980 ₽</b></div> </div> <div class="mock-card"> <div class="mock-card-head">Структура капитала</div> <div class="mock-bars"> <div class="mock-bar-row"> <span><i class="mock-dot" style="background:#5b54e8"></i>Текущие счета</span> <div class="mock-bar"><i style="width:37%;background:#5b54e8"></i></div> <b>314 200 ₽</b> </div><div class="mock-bar-row"> <span><i class="mock-dot" style="background:#1f9d63"></i>Акции</span> <div class="mock-bar"><i style="width:34%;background:#1f9d63"></i></div> <b>285 000 ₽</b> </div><div class="mock-bar-row"> <span><i class="mock-dot" style="background:#48bb78"></i>Подушка</span> <div class="mock-bar"><i style="width:28%;background:#48bb78"></i></div> <b>240 000 ₽</b> </div><div class="mock-bar-row"> <span><i class="mock-dot" style="background:#7c6cff"></i>Облигации</span> <div class="mock-bar"><i style="width:25%;background:#7c6cff"></i></div> <b>210 000 ₽</b> </div><div class="mock-bar-row"> <span><i class="mock-dot" style="background:#f6ad55"></i>Прочее</span> <div class="mock-bar"><i style="width:11%;background:#f6ad55"></i></div> <b>126 750 ₽</b> </div> </div> </div> </div> </div> </div> </div> </section> <section class="section"> <div class="container"> <div class="author-teaser"> <img src="/images/author.jpg" alt="Александр Гладких — аналитик данных, психолог" loading="lazy"> <div> <span class="eyebrow">Автор</span> <h2 style="margin-bottom:10px">Александр Гладких</h2> <p style="color:var(--muted)">
+Аналитик данных, психолог, сторонник бережливого подхода. Автор курса
+<a href="https://stepik.org/course/284858/promo" target="_blank" rel="noopener noreferrer">«Конструктор денежных привычек»</a>
+и трекера доходов и расходов.
+</p> <div class="hero-actions" style="margin-top:16px"> <a class="btn btn-ghost" href="/about/">Подробнее обо мне</a> <a class="btn" href="/consult/">Консультация</a> </div> </div> </div> </div> </section> <section class="section faq" id="faq"> <div class="container"> <div class="section-head"> <span class="eyebrow">Вопросы</span> <h2>Коротко о главном</h2> </div> <details> <summary>Сервис правда бесплатный?</summary> <p>Да. Вы создаёте копию Google Таблицы, разворачиваете свой Apps Script и пользуетесь сервисом без оплаты.</p> </details><details> <summary>Где хранятся мои данные?</summary> <p>Только в вашей Google Таблице. Приложение читает и пишет данные по вашему персональному адресу скрипта. Автор сервиса доступа к ним не имеет.</p> </details><details> <summary>Что нужно установить?</summary> <p>Ничего. Сервис работает в браузере. Единственная настройка — развернуть Apps Script, и делать это удобнее с компьютера.</p> </details><details> <summary>Можно пользоваться с телефона?</summary> <p>Да, интерфейс адаптирован под мобильные. Настройка скрипта — один раз с компьютера, дальше можно вести учёт с телефона.</p> </details><details> <summary>Что будет на консультации?</summary> <p>Можно разобрать траты по выписке из банка или по трекеру, обсудить вопросы и привычки. Онлайн, 50 минут; знакомство 15–20 минут бесплатно.</p> </details> </div> </section> <section class="section"> <div class="container"> <div class="cta-band"> <div> <h2>Есть вопросы, которые не хочется решать в одиночку?</h2> <p>Онлайн-консультация: разберём учёт, цели и привычки. Знакомство 15–20 минут — бесплатно, первая встреча — 1 500 ₽ за 50 минут.</p> </div> <div class="cta-actions"> <a class="btn" href="mailto:gladkikh.consult@mail.ru?subject=%D0%9A%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D0%BE%20%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%BC%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%D0%B0%D0%BC&#38;body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80!%0A%0A%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E.%0A%0A%D0%A7%D1%82%D0%BE%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%3A%0A%0A%D0%A3%D0%B4%D0%BE%D0%B1%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%3A%0A">Записаться на консультацию</a> <a class="btn btn-ghost" href="https://vk.ru/gladkikh_consult" target="_blank" rel="noopener noreferrer">Написать в VK</a> </div> </div> </div> </section> <div class="video-modal" id="video-modal" aria-hidden="true"> <div class="video-frame"> <button class="video-close" type="button" data-video-close aria-label="Закрыть">×</button> <div class="video-ratio"> <iframe title="Видео-инструкция по настройке" data-video-src="https://rutube.ru/play/embed/ffc37a277f3a1590537c6ff865e9cd40" allow="clipboard-write; autoplay" allowfullscreen loading="lazy"></iframe> </div> </div> </div>  </main> <footer class="site-footer"> <div class="container"> <div class="footer-grid"> <div> <h4>Финграм</h4> <p style="margin:0 0 12px">Личные финансы без хаоса. Трекер на вашей Google Таблице. Если хочется обсудить деньги и привычки — консультация.</p> <p style="margin:0;font-size:14px">Данные хранятся только в вашей таблице — автор сервиса их не видит.</p> </div> <div> <h4>Разделы</h4> <div class="footer-links"> <a href="/">Главная</a> <a href="/app/index.html">Открыть сервис</a> <a href="/blog/">Блог</a> <a href="/about/">Обо мне</a> <a href="/consult/">Консультация</a> <a href="/privacy/">Политика конфиденциальности</a> </div> </div> <div> <h4>Связаться</h4> <div class="footer-links"> <a href="mailto:gladkikh.consult@mail.ru">gladkikh.consult@mail.ru</a> <a href="https://vk.ru/gladkikh_consult" target="_blank" rel="noopener noreferrer">ВКонтакте</a> <a href="https://www.b17.ru/agladkih/" target="_blank" rel="noopener noreferrer">b17.ru</a> <a href="https://profi.ru/profile/GladkikhAA22/" target="_blank" rel="noopener noreferrer">Profi.ru</a> </div> </div> </div> <div class="footer-bottom"> <span>© 2026 Александр Гладких. Все права защищены.</span> <span>Сделано с заботой о ваших деньгах.</span> </div> </div> </footer> <script>
+      (function () {
+        function ready(fn) {
+          if (document.readyState !== 'loading') fn();
+          else document.addEventListener('DOMContentLoaded', fn);
+        }
+
+        ready(function () {
+          var lightbox = null;
+
+          function ensureLightbox() {
+            if (lightbox) return lightbox;
+            lightbox = document.createElement('div');
+            lightbox.className = 'lightbox';
+            lightbox.innerHTML =
+              '<button class="lightbox-close" aria-label="Закрыть">×</button><img alt="">';
+            document.body.appendChild(lightbox);
+            lightbox.addEventListener('click', function (e) {
+              if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+                closeLightbox();
+              }
+            });
+            return lightbox;
+          }
+
+          function openLightbox(src, alt) {
+            var lb = ensureLightbox();
+            var img = lb.querySelector('img');
+            img.src = src;
+            img.alt = alt || '';
+            lb.classList.add('open');
+            document.body.style.overflow = 'hidden';
+          }
+
+          function closeLightbox() {
+            if (!lightbox) return;
+            lightbox.classList.remove('open');
+            document.body.style.overflow = '';
+          }
+
+          document.querySelectorAll('.prose img').forEach(function (img) {
+            img.addEventListener('click', function () {
+              openLightbox(img.currentSrc || img.src, img.alt);
+            });
+          });
+
+          document.querySelectorAll('[data-gallery]').forEach(function (gallery) {
+            var main = gallery.querySelector('[data-gallery-img]');
+            var caption = gallery.querySelector('[data-gallery-caption]');
+            var openBtn = gallery.querySelector('[data-gallery-open]');
+            var thumbs = Array.prototype.slice.call(
+              gallery.querySelectorAll('[data-gallery-thumb]'),
+            );
+            var prev = gallery.querySelector('[data-gallery-prev]');
+            var next = gallery.querySelector('[data-gallery-next]');
+            var index = 0;
+            if (!main || !thumbs.length) return;
+
+            function show(n, zoom) {
+              index = (n + thumbs.length) % thumbs.length;
+              var thumb = thumbs[index];
+              main.src = thumb.getAttribute('data-src');
+              main.alt = thumb.getAttribute('data-alt') || '';
+              if (caption) caption.textContent = thumb.getAttribute('data-caption') || '';
+              thumbs.forEach(function (t, i) {
+                t.classList.toggle('active', i === index);
+              });
+              if (zoom) openLightbox(main.src, main.alt);
+            }
+
+            if (prev)
+              prev.addEventListener('click', function () {
+                show(index - 1);
+              });
+            if (next)
+              next.addEventListener('click', function () {
+                show(index + 1);
+              });
+            thumbs.forEach(function (t, i) {
+              t.addEventListener('click', function () {
+                show(i);
+              });
+            });
+            if (openBtn)
+              openBtn.addEventListener('click', function () {
+                show(index, true);
+              });
+            show(0);
+          });
+
+          var siteHeader = document.querySelector('.site-header');
+          var burger = document.querySelector('[data-nav-toggle]');
+          if (burger && siteHeader) {
+            burger.addEventListener('click', function () {
+              var open = siteHeader.classList.toggle('nav-open');
+              burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+            });
+          }
+
+          document.querySelectorAll('[data-submenu-toggle]').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+              var item = btn.closest('.nav-item');
+              if (!item) return;
+              var open = item.classList.toggle('open');
+              btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+            });
+          });
+
+          document.addEventListener('click', function (e) {
+            if (!e.target.closest('.nav-item.has-children')) {
+              document.querySelectorAll('.nav-item.open').forEach(function (item) {
+                item.classList.remove('open');
+              });
+            }
+            if (siteHeader && !e.target.closest('.site-header')) {
+              siteHeader.classList.remove('nav-open');
+            }
+          });
+
+          document.querySelectorAll('.site-nav a').forEach(function (link) {
+            link.addEventListener('click', function () {
+              if (siteHeader) siteHeader.classList.remove('nav-open');
+            });
+          });
+
+          document.querySelectorAll('[data-app-preview]').forEach(function (preview) {
+            var tabs = Array.prototype.slice.call(
+              preview.querySelectorAll('[data-app-tab]'),
+            );
+            if (!tabs.length) return;
+            tabs.forEach(function (tab) {
+              tab.addEventListener('click', function () {
+                var key = tab.getAttribute('data-app-tab');
+                tabs.forEach(function (t) {
+                  t.classList.toggle('active', t === tab);
+                });
+                preview.querySelectorAll('[data-app-panel]').forEach(function (panel) {
+                  panel.classList.toggle(
+                    'active',
+                    panel.getAttribute('data-app-panel') === key,
+                  );
+                });
+              });
+            });
+          });
+
+          var videoModal = document.getElementById('video-modal');
+
+          function closeVideo() {
+            if (!videoModal) return;
+            videoModal.classList.remove('open');
+            document.body.style.overflow = '';
+            var frame = videoModal.querySelector('iframe');
+            if (frame) frame.src = 'about:blank';
+          }
+
+          document.querySelectorAll('[data-video-open]').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+              if (!videoModal) return;
+              var frame = videoModal.querySelector('iframe');
+              if (frame) frame.src = frame.getAttribute('data-video-src');
+              videoModal.classList.add('open');
+              document.body.style.overflow = 'hidden';
+            });
+          });
+
+          document.querySelectorAll('[data-video-close]').forEach(function (btn) {
+            btn.addEventListener('click', closeVideo);
+          });
+
+          if (videoModal) {
+            videoModal.addEventListener('click', function (e) {
+              if (e.target === videoModal) closeVideo();
+            });
+          }
+
+          document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+              closeLightbox();
+              closeVideo();
+            }
+          });
+
+          var returning = document.getElementById('returning');
+          if (returning) {
+            try {
+              var configured = !!(
+                localStorage.getItem('real_api_url') ||
+                localStorage.getItem('demo_mode') === 'true'
+              );
+              var dismissed = sessionStorage.getItem('returning_dismissed') === '1';
+              if (configured && !dismissed) returning.hidden = false;
+              if (configured) {
+                var cta = document.querySelector('[data-primary-cta]');
+                if (cta) cta.textContent = 'Продолжить работу →';
+              }
+            } catch (e) {}
+            var hide = returning.querySelector('[data-returning-close]');
+            if (hide)
+              hide.addEventListener('click', function () {
+                returning.hidden = true;
+                try {
+                  sessionStorage.setItem('returning_dismissed', '1');
+                } catch (e) {}
+              });
+          }
+        });
+      })();
+    </script> </body> </html>
