@@ -1,0 +1,754 @@
+<!DOCTYPE html><html lang="ru"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Цена жизни в часах — Финграм</title><meta name="description" content="Практика из книги «Кошелёк или жизнь»: рассчитайте реальную часовую ставку и посмотрите, сколько часов работы стоит каждая трата."><link rel="canonical" href="https://agladkikh.ru/calculators/tsena-zhizni/"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta property="og:type" content="website"><meta property="og:title" content="Цена жизни в часах — Финграм"><meta property="og:description" content="Практика из книги «Кошелёк или жизнь»: рассчитайте реальную часовую ставку и посмотрите, сколько часов работы стоит каждая трата."><meta property="og:url" content="https://agladkikh.ru/calculators/tsena-zhizni/"><meta property="og:image" content="https://agladkikh.ru/images/author.jpg"><meta property="og:site_name" content="Финграм"><meta property="og:locale" content="ru_RU"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Финграм","description":"Бесплатный трекер доходов, расходов и капитала на вашей Google Таблице. Блог о деньгах, привычках и решениях.","url":"https://agladkikh.ru/calculators/tsena-zhizni/","email":"gladkikh.consult@mail.ru","areaServed":"RU","sameAs":["https://vk.ru/gladkikh_consult","https://www.b17.ru/agladkih/","https://profi.ru/profile/GladkikhAA22/"],"founder":{"@type":"Person","name":"Александр Гладких"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Финграм","url":"https://agladkikh.ru/","inLanguage":"ru-RU"}</script><script>
+          (function () {
+            var hosts = ['agladkikh.ru', 'www.agladkikh.ru', 'fingram-concult.github.io', 'fingram.ru', 'www.fingram.ru'];
+            if (hosts.indexOf(location.hostname) === -1) return;
+            (function (m, e, t, r, i, k, a) {
+              m[i] =
+                m[i] ||
+                function () {
+                  (m[i].a = m[i].a || []).push(arguments);
+                };
+              m[i].l = 1 * new Date();
+              for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                  return;
+                }
+              }
+              (k = e.createElement(t)),
+                (a = e.getElementsByTagName(t)[0]),
+                (k.async = 1),
+                (k.src = r),
+                a.parentNode.insertBefore(k, a);
+            })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+            ym(110540800, 'init', {
+              clickmap: true,
+              trackLinks: true,
+              accurateTrackBounce: true,
+              webvisor: true,
+            });
+          })();
+        </script><noscript><div><img src="https://mc.yandex.ru/watch/110540800" style="position:absolute; left:-9999px;" alt=""></div></noscript><link rel="stylesheet" href="/assets/about.Dlb-nmt4.css"></head> <body>  <header class="site-header"> <div class="container header-inner"> <a class="brand" href="/" aria-label="Финграм — на главную"> <span class="brand-mark">Ф</span> <span class="brand-name">Финграм</span> </a> <button class="nav-burger" type="button" data-nav-toggle aria-label="Открыть меню" aria-expanded="false"> <span></span><span></span><span></span> </button> <nav class="site-nav" aria-label="Основная навигация">  <div class="nav-item has-children"> <button class="nav-link" type="button" data-submenu-toggle aria-expanded="false"> Сервис <span class="nav-caret">▾</span> </button> <div class="nav-submenu"> <a href="/app/index.html#month">Месяц</a><a href="/app/index.html#year">Год</a><a href="/app/index.html#dynamics">Динамика</a><a href="/app/index.html#add">+ Запись</a><a href="/app/index.html#history">История</a><a href="/app/index.html#balance">Баланс</a><a href="/app/index.html#settings">Настройки</a> </div> </div> <div class="nav-sections-mobile"> <span class="nav-sections-title">Сервис</span> <div class="nav-sections-list"> <a href="/app/index.html#month">Месяц</a><a href="/app/index.html#year">Год</a><a href="/app/index.html#dynamics">Динамика</a><a href="/app/index.html#add">+ Запись</a><a href="/app/index.html#history">История</a><a href="/app/index.html#balance">Баланс</a><a href="/app/index.html#settings">Настройки</a> </div> </div> <a class="nav-link" href="/blog/"> Блог </a><a class="nav-link" href="/calculators/" aria-current="page"> Калькуляторы </a><a class="nav-link" href="/about/"> Обо мне </a><a class="nav-link" href="/consult/"> Консультация </a> </nav> </div> </header> <main>  <section class="page-head"> <div class="container"> <span class="eyebrow">Калькуляторы</span> <h1>Цена жизни в часах</h1> <p>
+Деньги — это жизненная энергия, которую вы обмениваете на часы работы. Этот расчёт помогает
+        увидеть, сколько часов стоит покупка. Идея и методика — из книги Вики Робин и Джо Домингеса
+        «Кошелёк или жизнь» (Your Money or Your Life).
+</p> </div> </section> <section class="section"> <div class="container"> <div class="card life-energy-source"> <div class="card-title">Откуда метод</div> <p>
+В книге «Кошелёк или жизнь» Вики Робин и Джо Домингес предлагают считать не номинальный
+          оклад, а <b>реальную часовую ставку</b> — сколько денег остаётся на руки после налогов и
+          рабочих расходов, делённое на все часы, которые работа забирает. Затем цена покупки
+          переводится в <b>жизненную энергию</b> — часы работы. Это упражнение на осознание, а не
+          инвестиционная рекомендация.
+</p> </div> </div> </section> <section class="section"> <div class="container"> <div class="card"> <div class="card-title">Ваши реальные траты из трекера</div> <p class="life-energy-intro">
+Если вы уже ведёте трекер на этом устройстве, здесь появятся ваши категории расходов за
+          последние месяцы. Показываем только реальные операции — демо-данные сюда не попадают, чтобы
+          не путать их с вашими.
+</p> <div id="tracker-status" class="calc-note" data-app-url="/app/index.html">Проверяем локальные данные трекера…</div> <div id="tracker-content" hidden> <div class="tracker-summary"> <div><span>Период</span><b id="tracker-period">—</b></div> <div><span>В среднем расходов в месяц</span><b id="tracker-avg">—</b></div> <div><span>Средний доход в месяц</span><b id="tracker-income">—</b></div> </div> <div class="tracker-bars" id="tracker-bars"></div> <div class="tracker-actions"> <button class="btn btn-sm" type="button" id="tracker-apply-income">Подставить средний доход</button> <a class="btn btn-ghost btn-sm" href="/app/index.html#history">Открыть историю в трекере</a> </div> <p class="calc-note" id="tracker-cache-note"></p> </div> </div> </div> </section> <section class="section"> <div class="container"> <div class="calc-grid"> <div class="card calc-card"> <h2>1. Реальная часовая ставка</h2> <p class="calc-note" style="margin:0 0 14px">
+Минимум — доход, рабочие часы и дорога. Остальные поля можно оставить как есть или
+            обнулить.
+</p> <div class="calc-fields"> <label class="calc-field"> <span>Доход на руки в месяц, ₽</span> <input class="form-input" id="le-net" type="number" min="0" step="1000" value="100000"> </label> <label class="calc-field"> <span>Рабочие часы в неделю</span> <input class="form-input" id="le-work-hours" type="number" min="0" step="0.5" value="40"> </label> <label class="calc-field"> <span>Рабочих дней в месяц</span> <input class="form-input" id="le-work-days" type="number" min="1" step="1" value="21"> </label> <label class="calc-field"> <span>Дорога на работу и обратно, часов в день</span> <input class="form-input" id="le-commute" type="number" min="0" step="0.25" value="1.5"> </label> <label class="calc-field"> <span>Обед и перерывы, часов в день</span> <input class="form-input" id="le-lunch" type="number" min="0" step="0.25" value="0.5"> </label> <label class="calc-field"> <span>Работа вне работы и восстановление, часов в неделю</span> <input class="form-input" id="le-extra-hours" type="number" min="0" step="0.5" value="2"> </label> <label class="calc-field"> <span>Мероприятия из-за работы, часов в месяц</span> <input class="form-input" id="le-work-events" type="number" min="0" step="0.5" value="0"> </label> <label class="calc-field"> <span>Расходы, связанные с работой, ₽ в месяц</span> <input class="form-input" id="le-work-expenses" type="number" min="0" step="500" value="5000"> </label> </div> <div class="calc-result" aria-live="polite"> <div class="calc-line"><span>Часов, связанных с работой, в месяц</span><b id="le-total-hours">—</b></div> <div class="calc-line"><span>Доход после рабочих расходов</span><b id="le-net-after">—</b></div> <div class="calc-line"><span>Реальная часовая ставка</span><b id="le-real-rate">—</b></div> </div> <p class="calc-note">
+В доход включайте всё, что реально приходит: зарплату, проценты по вкладам, подработки,
+            подарки, возвраты и продажи вещей. Если доход нерегулярный — возьмите среднее за 3–6
+            месяцев.
+</p> <details class="le-details"> <summary>Что считать рабочим временем</summary> <ul> <li>Рабочие часы и переработки.</li> <li>Дорога на работу и обратно.</li> <li>
+Обед и перерывы, если они не входят в рабочие часы. Если обед уже внутри рабочего
+                дня, оставьте 0, чтобы не посчитать его дважды.
+</li> <li>
+Работа вне работы: подготовка, сообщения, дедлайны, мысли о работе, время на
+                восстановление, если без работы его бы не было.
+</li> <li>
+Обязательные мероприятия: корпоративы, встречи с коллегами, посиделки после работы,
+                если без работы вы бы туда не пошли.
+</li> </ul> </details> </div> <div class="card calc-card"> <h2>2. Цена покупки в часах жизни</h2> <div class="calc-mode" role="group" aria-label="Тип покупки"> <label class="calc-mode-option"> <input type="radio" name="le-purchase-mode" value="once" checked> <span>Разовая</span> </label> <label class="calc-mode-option"> <input type="radio" name="le-purchase-mode" value="monthly"> <span>Регулярная</span> </label> </div> <div class="calc-fields"> <label class="calc-field"> <span>Цена покупки, ₽</span> <input class="form-input" id="le-price" type="number" min="0" step="100" value="10000"> </label> <label class="calc-field" id="le-times-wrap" hidden> <span>Покупок в месяц</span> <input class="form-input" id="le-times" type="number" min="1" step="1" value="1"> </label> </div> <div class="calc-result" aria-live="polite"> <div class="calc-line"><span>Это часов работы</span><b id="le-hours">—</b></div> <div class="calc-line"><span>Это рабочих дней по 8 часов</span><b id="le-days">—</b></div> <div class="calc-line"><span>Это рабочих недель</span><b id="le-weeks">—</b></div> <div class="calc-line" id="le-year-line" hidden> <span>За год при такой частоте</span><b id="le-year-hours">—</b> </div> </div> <p class="calc-note">
+Цена в часах = цена покупки / реальная часовая ставка. Разовая покупка — это один обмен
+            энергии. Для регулярной можно посмотреть, сколько набегает за год. Это не запрет на
+            покупку, а способ увидеть обмен.
+</p> </div> </div> </div> </section> <section class="section"> <div class="container"> <div class="section-head" style="max-width:780px"> <span class="eyebrow">Оценка трат</span> <h2>Три вопроса к каждой статье расходов</h2> <p>
+Не к отдельной покупке, а к категории: так видно, где энергия возвращается, где остаётся
+          нейтральной, а где уходит в минус. Оценка субъективная — это нормально.
+</p> </div> <div class="le-question-grid"> <div class="card le-question-card"> <div class="le-question-num">1</div> <h3>Удовлетворение и ценность жизни</h3> <p>
+Стало ли мне от этой траты лучше? Принесла ли она столько радости, пользы и спокойствия,
+            сколько жизненной энергии я на неё потратил? Если да — ↑. Если ничего не изменилось — 0.
+            Если стало тяжелее, тревожнее или пустее — ↓.
+</p> <div class="le-arrow-legend"> <span>↑ энергия возвращается</span> <span>0 нейтрально</span> <span>↓ энергия уходит</span> </div> </div> <div class="card le-question-card"> <div class="le-question-num">2</div> <h3>Соответствие целям и ценностям</h3> <p>
+Помогает ли эта статья расходов тому, что для меня действительно важно: безопасности,
+            семье, здоровью, развитию, свободе? Или она противоречит моим целям и уводит в сторону?
+            ↑ — соответствует, 0 — нейтрально, ↓ — противоречит.
+</p> <div class="le-arrow-legend"> <span>↑ соответствует</span> <span>0 нейтрально</span> <span>↓ противоречит</span> </div> </div> <div class="card le-question-card"> <div class="le-question-num">3</div> <h3>Если бы не нужно было зарабатывать</h3> <p>
+Представьте, что деньги не нужно зарабатывать. Эта статья расходов выросла бы, осталась
+            бы такой же или сократилась? Например, дорога и офисная одежда часто падают, а хобби,
+            путешествия и время с семьёй — растут. ↑ — расходы вырастут, 0 — не изменятся, ↓ —
+            сократятся.
+</p> <div class="le-arrow-legend"> <span>↑ вырастут</span> <span>0 без изменений</span> <span>↓ сократятся</span> </div> </div> </div> </div> </section> <section class="section"> <div class="container"> <div class="card le-assess-card"> <div class="card-title">Оценка по статьям</div> <p class="life-energy-intro">
+Поставьте ↑, 0 или ↓ по каждой статье. Если данных трекера нет, начните с типовых
+          категорий — заполнять всё не обязательно.
+</p> <div class="le-assess-scroll"> <div class="le-assess-head"> <span>Статья расходов</span> <span>Удовлетворение</span> <span>Цели и ценности</span> <span>Если не работать</span> </div> <div id="le-assess-rows"></div> </div> <div class="le-assess-summary" id="le-assess-summary"></div> <p class="calc-note">
+Это не оценка «хорошо/плохо». ↑ показывает, что трата возвращает энергию и совпадает с
+          целями; ↓ — что энергия уходит без отдачи или против целей; 0 — нейтрально.
+</p> </div> </div> </section> <section class="section"> <div class="container"> <div class="card"> <div class="card-title">Что легко упустить</div> <p class="life-energy-intro">
+Калькулятор не требует идеальной бухгалтерии. Но несколько вещей лучше не терять — иначе
+          реальная ставка и цена жизни исказятся.
+</p> <div class="le-details-grid"> <div> <h3>В доходе</h3> <ul> <li>Проценты по вкладам, накопительным счетам и облигациям.</li> <li>Кэшбэк, бонусы и возвраты, которые реально приходят деньгами.</li> <li>Подработки и разовые заказы.</li> <li>Подарки деньгами и продажа ненужных вещей.</li> </ul> </div> <div> <h3>В тратах</h3> <ul> <li>Разовые крупные траты: отпуск, страховка, обучение, ремонт.</li> <li>Траты, которые исчезнут, если не работать: дорога, обеды, одежда.</li> <li>Траты, которые вырастут, если не работать: хобби, поездки, время с семьёй.</li> <li>Регулярные подписки и мелкие списания, которые легко не заметить.</li> </ul> </div> </div> <p class="calc-note">
+Если подарили 10 000 ₽ — это тоже ресурс. Если вы его не учитываете, кажется, что жизнь
+          стоит дороже, чем есть на самом деле. Если не учитываете разовую крупную трату — наоборот,
+          недооцениваете.
+</p> </div> </div> </section> <section class="section"> <div class="container prose" style="max-width:760px"> <h2>Как считать</h2> <p>
+Сначала посчитайте, сколько часов в месяц уходит на работу: рабочие часы, дорога, обед и
+        перерывы, работа вне работы и мероприятия, которые появились из-за работы. Затем вычтите из
+        дохода на руки расходы, связанные с работой. Получится сумма, которую вы действительно
+        обмениваете на рабочее время.
+</p> <p> <code>Реальная ставка = (доход на руки − рабочие расходы) / все часы, связанные с работой</code> </p> <p>
+Дальше любая покупка переводится в часы:
+<code>часы = цена покупки / реальная ставка</code>. Например, если реальная ставка — 450 ₽ в
+        час, покупка за 10 000 ₽ стоит около 22 часов работы. Это почти три рабочих дня по 8 часов.
+</p> <h2>Что важно помнить</h2> <ul> <li>
+Это не точный бухгалтерский расчёт, а ориентир: доход, расходы и часы — ваши оценки, и их
+          можно уточнять.
+</li> <li>
+Метод не требует отказываться от всего. Он помогает отделять траты, которые действительно
+          дают ценность, от тех, что происходят автоматически.
+</li> <li>
+Цена в часах — не приговор покупке. Иногда вещь стоит своих часов, и это нормально.
+</li> <li>
+Если работа забирает больше сил, чем кажется, это тоже результат: возможно, стоит обсудить
+          не только траты, но и режим.
+</li> </ul> <p>
+Методика описана в книге Вики Робин и Джо Домингеса «Кошелёк или жизнь» (Your Money or Your
+        Life). Мы используем упражнение «реальная часовая ставка» и «жизненная энергия» и не
+        пересказываем книгу целиком. Это не инвестиционные рекомендации.
+</p> </div> </section> <section class="section"> <div class="container"> <div class="cta-band"> <div> <h2>Хочется увидеть, куда уходит энергия?</h2> <p>В трекере можно вести расходы и смотреть на реальные траты. А на консультации — разобрать привычки и решения, которые стоят за цифрами.</p> </div> <div class="cta-actions"> <a class="btn" href="mailto:gladkikh.consult@mail.ru?subject=%D0%9A%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D0%BE%20%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%BC%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%D0%B0%D0%BC&#38;body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80!%0A%0A%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E.%0A%0A%D0%A7%D1%82%D0%BE%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%3A%0A%0A%D0%A3%D0%B4%D0%BE%D0%B1%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%3A%0A">Записаться на консультацию</a> <a class="btn btn-ghost" href="https://vk.ru/gladkikh_consult" target="_blank" rel="noopener noreferrer">Написать в VK</a> </div> </div> </div> </section>  </main> <footer class="site-footer"> <div class="container"> <div class="footer-grid"> <div> <h4>Финграм</h4> <p style="margin:0 0 12px">Личные финансы без хаоса. Трекер на вашей Google Таблице. Если хочется обсудить деньги и привычки — консультация.</p> <p style="margin:0;font-size:14px">Данные хранятся только в вашей таблице — автор сервиса их не видит.</p> </div> <div> <h4>Разделы</h4> <div class="footer-links"> <a href="/">Главная</a> <a href="/app/index.html">Открыть сервис</a> <a href="/blog/">Блог</a> <a href="/calculators/">Калькуляторы</a> <a href="/about/">Обо мне</a> <a href="/consult/">Консультация</a> <a href="/privacy/">Политика конфиденциальности</a> </div> </div> <div> <h4>Связаться</h4> <div class="footer-links"> <a href="mailto:gladkikh.consult@mail.ru">gladkikh.consult@mail.ru</a> <a href="https://vk.ru/gladkikh_consult" target="_blank" rel="noopener noreferrer">ВКонтакте</a> <a href="https://www.b17.ru/agladkih/" target="_blank" rel="noopener noreferrer">b17.ru</a> <a href="https://profi.ru/profile/GladkikhAA22/" target="_blank" rel="noopener noreferrer">Profi.ru</a> </div> </div> </div> <div class="footer-bottom"> <span>© 2026 Александр Гладких. Все права защищены.</span> <span>Сделано с заботой о ваших деньгах.</span> </div> </div> </footer> <script>
+      (function () {
+        function ready(fn) {
+          if (document.readyState !== 'loading') fn();
+          else document.addEventListener('DOMContentLoaded', fn);
+        }
+
+        ready(function () {
+          var lightbox = null;
+
+          function ensureLightbox() {
+            if (lightbox) return lightbox;
+            lightbox = document.createElement('div');
+            lightbox.className = 'lightbox';
+            lightbox.innerHTML =
+              '<button class="lightbox-close" aria-label="Закрыть">×</button><img alt="">';
+            document.body.appendChild(lightbox);
+            lightbox.addEventListener('click', function (e) {
+              if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+                closeLightbox();
+              }
+            });
+            return lightbox;
+          }
+
+          function openLightbox(src, alt) {
+            var lb = ensureLightbox();
+            var img = lb.querySelector('img');
+            img.src = src;
+            img.alt = alt || '';
+            lb.classList.add('open');
+            document.body.style.overflow = 'hidden';
+          }
+
+          function closeLightbox() {
+            if (!lightbox) return;
+            lightbox.classList.remove('open');
+            document.body.style.overflow = '';
+          }
+
+          document.querySelectorAll('.prose img').forEach(function (img) {
+            img.addEventListener('click', function () {
+              openLightbox(img.currentSrc || img.src, img.alt);
+            });
+          });
+
+          document.querySelectorAll('[data-gallery]').forEach(function (gallery) {
+            var main = gallery.querySelector('[data-gallery-img]');
+            var caption = gallery.querySelector('[data-gallery-caption]');
+            var openBtn = gallery.querySelector('[data-gallery-open]');
+            var thumbs = Array.prototype.slice.call(
+              gallery.querySelectorAll('[data-gallery-thumb]'),
+            );
+            var prev = gallery.querySelector('[data-gallery-prev]');
+            var next = gallery.querySelector('[data-gallery-next]');
+            var index = 0;
+            if (!main || !thumbs.length) return;
+
+            function show(n, zoom) {
+              index = (n + thumbs.length) % thumbs.length;
+              var thumb = thumbs[index];
+              main.src = thumb.getAttribute('data-src');
+              main.alt = thumb.getAttribute('data-alt') || '';
+              if (caption) caption.textContent = thumb.getAttribute('data-caption') || '';
+              thumbs.forEach(function (t, i) {
+                t.classList.toggle('active', i === index);
+              });
+              if (zoom) openLightbox(main.src, main.alt);
+            }
+
+            if (prev)
+              prev.addEventListener('click', function () {
+                show(index - 1);
+              });
+            if (next)
+              next.addEventListener('click', function () {
+                show(index + 1);
+              });
+            thumbs.forEach(function (t, i) {
+              t.addEventListener('click', function () {
+                show(i);
+              });
+            });
+            if (openBtn)
+              openBtn.addEventListener('click', function () {
+                show(index, true);
+              });
+            show(0);
+          });
+
+          var siteHeader = document.querySelector('.site-header');
+          var burger = document.querySelector('[data-nav-toggle]');
+          if (burger && siteHeader) {
+            burger.addEventListener('click', function () {
+              var open = siteHeader.classList.toggle('nav-open');
+              burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+            });
+          }
+
+          document.querySelectorAll('[data-submenu-toggle]').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+              var item = btn.closest('.nav-item');
+              if (!item) return;
+              var open = item.classList.toggle('open');
+              btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+            });
+          });
+
+          document.addEventListener('click', function (e) {
+            if (!e.target.closest('.nav-item.has-children')) {
+              document.querySelectorAll('.nav-item.open').forEach(function (item) {
+                item.classList.remove('open');
+              });
+            }
+            if (siteHeader && !e.target.closest('.site-header')) {
+              siteHeader.classList.remove('nav-open');
+            }
+          });
+
+          document.querySelectorAll('.site-nav a').forEach(function (link) {
+            link.addEventListener('click', function () {
+              if (siteHeader) siteHeader.classList.remove('nav-open');
+            });
+          });
+
+          document.querySelectorAll('[data-app-preview]').forEach(function (preview) {
+            var tabs = Array.prototype.slice.call(
+              preview.querySelectorAll('[data-app-tab]'),
+            );
+            if (!tabs.length) return;
+            tabs.forEach(function (tab) {
+              tab.addEventListener('click', function () {
+                var key = tab.getAttribute('data-app-tab');
+                tabs.forEach(function (t) {
+                  t.classList.toggle('active', t === tab);
+                });
+                preview.querySelectorAll('[data-app-panel]').forEach(function (panel) {
+                  panel.classList.toggle(
+                    'active',
+                    panel.getAttribute('data-app-panel') === key,
+                  );
+                });
+              });
+            });
+          });
+
+          var videoModal = document.getElementById('video-modal');
+
+          function closeVideo() {
+            if (!videoModal) return;
+            videoModal.classList.remove('open');
+            document.body.style.overflow = '';
+            var frame = videoModal.querySelector('iframe');
+            if (frame) frame.src = 'about:blank';
+          }
+
+          document.querySelectorAll('[data-video-open]').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+              if (!videoModal) return;
+              var frame = videoModal.querySelector('iframe');
+              if (frame) frame.src = frame.getAttribute('data-video-src');
+              videoModal.classList.add('open');
+              document.body.style.overflow = 'hidden';
+            });
+          });
+
+          document.querySelectorAll('[data-video-close]').forEach(function (btn) {
+            btn.addEventListener('click', closeVideo);
+          });
+
+          if (videoModal) {
+            videoModal.addEventListener('click', function (e) {
+              if (e.target === videoModal) closeVideo();
+            });
+          }
+
+          document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+              closeLightbox();
+              closeVideo();
+            }
+          });
+
+          var returning = document.getElementById('returning');
+          if (returning) {
+            try {
+              var configured = !!(
+                localStorage.getItem('real_api_url') ||
+                localStorage.getItem('demo_mode') === 'true'
+              );
+              var dismissed = sessionStorage.getItem('returning_dismissed') === '1';
+              if (configured && !dismissed) returning.hidden = false;
+              if (configured) {
+                var cta = document.querySelector('[data-primary-cta]');
+                if (cta) cta.textContent = 'Продолжить работу →';
+              }
+            } catch (e) {}
+            var hide = returning.querySelector('[data-returning-close]');
+            if (hide)
+              hide.addEventListener('click', function () {
+                returning.hidden = true;
+                try {
+                  sessionStorage.setItem('returning_dismissed', '1');
+                } catch (e) {}
+              });
+          }
+        });
+      })();
+    </script> </body> </html> <script>
+  (function () {
+    var rub = new Intl.NumberFormat('ru-RU', {
+      style: 'currency',
+      currency: 'RUB',
+      maximumFractionDigits: 0,
+    });
+    var hoursFmt = new Intl.NumberFormat('ru-RU', {
+      maximumFractionDigits: 1,
+    });
+    var daysFmt = new Intl.NumberFormat('ru-RU', {
+      maximumFractionDigits: 1,
+    });
+    var weeksFmt = new Intl.NumberFormat('ru-RU', {
+      maximumFractionDigits: 1,
+    });
+
+    function $(id) {
+      return document.getElementById(id);
+    }
+
+    function num(id) {
+      var el = $(id);
+      if (!el) return 0;
+      var v = parseFloat(String(el.value).replace(',', '.'));
+      return isFinite(v) ? v : 0;
+    }
+
+    function fmtMoney(n) {
+      return rub.format(isFinite(n) ? n : 0);
+    }
+
+    function fmtHours(n) {
+      return hoursFmt.format(isFinite(n) ? n : 0) + ' ч';
+    }
+
+    function fmtDays(n) {
+      return daysFmt.format(isFinite(n) ? n : 0) + ' дн.';
+    }
+
+    function fmtWeeks(n) {
+      return weeksFmt.format(isFinite(n) ? n : 0) + ' нед.';
+    }
+
+    function esc(s) {
+      return String(s).replace(/[&<>"']/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    }
+
+    var trackerData = null;
+    var assessCats = [];
+    var assessState = {};
+    var ASSESS_LABELS = {
+      sat: 'Удовлетворение',
+      val: 'Цели и ценности',
+      free: 'Если не работать',
+    };
+    var ASSESS_ARIA = {
+      sat: ['энергия возвращается', 'нейтрально', 'энергия уходит'],
+      val: ['соответствует', 'нейтрально', 'противоречит'],
+      free: ['расходы вырастут', 'не изменятся', 'сократятся'],
+    };
+    var DEFAULT_CATS = [
+      'Жильё',
+      'Продукты',
+      'Транспорт',
+      'Кафе и рестораны',
+      'Здоровье',
+      'Одежда',
+      'Развлечения',
+      'Подписки и связь',
+      'Обучение',
+      'Другое',
+    ];
+    var MONTH_SHORT = ['янв', 'фев', 'мар', 'апр', 'май', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'];
+
+    function updateTrackerHours(realRate) {
+      document.querySelectorAll('.tracker-hours').forEach(function (el) {
+        var amount = parseFloat(el.getAttribute('data-amount')) || 0;
+        el.textContent = realRate > 0 ? '≈ ' + fmtHours(amount / realRate) + ' жизни в месяц' : '—';
+      });
+    }
+
+    function update() {
+      var net = num('le-net');
+      var weeklyHours = num('le-work-hours');
+      var workDays = num('le-work-days');
+      var commute = num('le-commute');
+      var lunch = num('le-lunch');
+      var workExpenses = num('le-work-expenses');
+      var extraWeekly = num('le-extra-hours');
+      var workEvents = num('le-work-events');
+
+      var weeksPerMonth = 52 / 12;
+      var monthlyWorkHours = weeklyHours * weeksPerMonth;
+      var monthlyCommute = workDays * commute;
+      var monthlyLunch = workDays * lunch;
+      var monthlyExtra = extraWeekly * weeksPerMonth;
+      var totalHours = monthlyWorkHours + monthlyCommute + monthlyLunch + monthlyExtra + workEvents;
+      var netAfter = Math.max(0, net - workExpenses);
+      var realRate = totalHours > 0 ? netAfter / totalHours : 0;
+
+      $('le-total-hours').textContent = fmtHours(totalHours);
+      $('le-net-after').textContent = fmtMoney(netAfter);
+      $('le-real-rate').textContent = realRate > 0 ? fmtMoney(realRate) + ' / ч' : '—';
+      updateTrackerHours(realRate);
+
+      var price = num('le-price');
+      var modeEl = document.querySelector('input[name="le-purchase-mode"]:checked');
+      var mode = modeEl ? modeEl.value : 'once';
+      var times = mode === 'monthly' ? Math.max(1, Math.round(num('le-times'))) : 1;
+      var purchaseHours = realRate > 0 ? price / realRate : 0;
+      var yearHours = purchaseHours * times * 12;
+
+      $('le-times-wrap').hidden = mode !== 'monthly';
+      $('le-year-line').hidden = mode !== 'monthly';
+      $('le-hours').textContent = realRate > 0 ? fmtHours(purchaseHours) : '—';
+      $('le-days').textContent = realRate > 0 ? fmtDays(purchaseHours / 8) : '—';
+      $('le-weeks').textContent = realRate > 0 ? fmtWeeks(purchaseHours / 40) : '—';
+      $('le-year-hours').textContent = realRate > 0 ? fmtHours(yearHours) : '—';
+    }
+
+    function hashUrl(u) {
+      var h = 0;
+      for (var i = 0; i < u.length; i++) h = (h * 31 + u.charCodeAt(i)) >>> 0;
+      return h;
+    }
+
+    function cacheKeyFor(u) {
+      return 'finance_cache_' + hashUrl(u);
+    }
+
+    function readTrackerCache() {
+      var realUrl = null;
+      try {
+        realUrl = localStorage.getItem('real_api_url');
+      } catch (e) {
+        return null;
+      }
+      if (!realUrl) return null;
+
+      try {
+        var best = JSON.parse(localStorage.getItem(cacheKeyFor(realUrl)));
+        if (!best || !Array.isArray(best.transactions) || !best.transactions.length) return null;
+        return best;
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function monthKey(dateStr) {
+      return String(dateStr).slice(0, 7);
+    }
+
+    function shiftMonthKey(key, delta) {
+      var y = +key.slice(0, 4);
+      var m = +key.slice(5, 7) - 1 + delta;
+      var d = new Date(y, m, 1);
+      var mm = String(d.getMonth() + 1).padStart(2, '0');
+      return d.getFullYear() + '-' + mm;
+    }
+
+    function fmtMonth(key) {
+      return MONTH_SHORT[+key.slice(5, 7) - 1] + ' ' + key.slice(0, 4);
+    }
+
+    function computeTrackerData(payload) {
+      var txs = (payload.transactions || [])
+        .map(function (t) {
+          return {
+            date: String(t.date).slice(0, 10),
+            type: t.type,
+            category: t.category || 'Без категории',
+            amount: parseFloat(t.amount) || 0,
+          };
+        })
+        .filter(function (t) {
+          return /^\d{4}-\d{2}-\d{2}$/.test(t.date);
+        });
+      if (!txs.length) return null;
+
+      var latest = txs.reduce(function (max, t) {
+        return t.date > max ? t.date : max;
+      }, '');
+      var latestKey = monthKey(latest);
+      var keys = [];
+      var i;
+      for (i = 5; i >= 0; i--) keys.push(shiftMonthKey(latestKey, -i));
+      var keySet = {};
+      keys.forEach(function (k) {
+        keySet[k] = true;
+      });
+
+      var expenses = txs.filter(function (t) {
+        return t.type === 'expense' && t.amount > 0 && keySet[monthKey(t.date)];
+      });
+      var incomes = txs.filter(function (t) {
+        return t.type === 'income' && t.amount > 0 && keySet[monthKey(t.date)];
+      });
+      if (!expenses.length && !incomes.length) return null;
+
+      var expMonths = {};
+      expenses.forEach(function (t) {
+        expMonths[monthKey(t.date)] = true;
+      });
+      var incMonths = {};
+      incomes.forEach(function (t) {
+        incMonths[monthKey(t.date)] = true;
+      });
+      var expMonthCount = Object.keys(expMonths).length || 1;
+      var incMonthCount = Object.keys(incMonths).length || 1;
+      var expTotal = expenses.reduce(function (s, t) {
+        return s + t.amount;
+      }, 0);
+      var incTotal = incomes.reduce(function (s, t) {
+        return s + t.amount;
+      }, 0);
+      var byCat = {};
+      expenses.forEach(function (t) {
+        byCat[t.category] = (byCat[t.category] || 0) + t.amount;
+      });
+      var rows = Object.keys(byCat)
+        .map(function (cat) {
+          return { cat: cat, total: byCat[cat], avg: byCat[cat] / expMonthCount };
+        })
+        .sort(function (a, b) {
+          return b.avg - a.avg;
+        });
+
+      return {
+        period: fmtMonth(keys[0]) + ' — ' + fmtMonth(keys[keys.length - 1]),
+        avgExpense: expTotal / expMonthCount,
+        avgIncome: incTotal / incMonthCount,
+        rows: rows,
+        isFull: payload.transactionsLoaded === 'full',
+      };
+    }
+
+    function renderTracker() {
+      var status = $('tracker-status');
+      var content = $('tracker-content');
+      if (!status || !content) return;
+
+      var payload = readTrackerCache();
+      trackerData = payload ? computeTrackerData(payload) : null;
+      if (!trackerData) {
+        var appUrl = status.getAttribute('data-app-url') || '../app/index.html';
+        status.innerHTML =
+          'Реальных данных трекера на этом устройстве нет. Демо-данные здесь не показываем, чтобы не путать их с вашими. Можно считать вручную или <a href="' +
+          appUrl +
+          '">открыть трекер</a>, чтобы данные появились.';
+        content.hidden = true;
+        return;
+      }
+
+      status.hidden = true;
+      content.hidden = false;
+      $('tracker-period').textContent = trackerData.period;
+      $('tracker-avg').textContent = fmtMoney(trackerData.avgExpense) + ' / мес';
+      $('tracker-income').textContent = trackerData.avgIncome > 0 ? fmtMoney(trackerData.avgIncome) + ' / мес' : '—';
+
+      var maxAvg = trackerData.rows.length ? trackerData.rows[0].avg : 0;
+      var totalAvg = trackerData.rows.reduce(function (s, r) {
+        return s + r.avg;
+      }, 0);
+      $('tracker-bars').innerHTML = trackerData.rows
+        .slice(0, 8)
+        .map(function (r) {
+          var width = maxAvg > 0 ? (r.avg / maxAvg) * 100 : 0;
+          var share = totalAvg > 0 ? (r.avg / totalAvg) * 100 : 0;
+          return (
+            '<div class="tracker-row">' +
+            '<div class="tracker-row-top"><span>' +
+            esc(r.cat) +
+            '</span><b>' +
+            fmtMoney(r.avg) +
+            ' / мес</b></div>' +
+            '<div class="tracker-bar"><span style="width:' +
+            width.toFixed(1) +
+            '%"></span></div>' +
+            '<div class="tracker-row-meta"><span>' +
+            share.toFixed(0) +
+            '% расходов</span><span class="tracker-hours" data-amount="' +
+            r.avg +
+            '">—</span></div>' +
+            '</div>'
+          );
+        })
+        .join('');
+
+      var note = $('tracker-cache-note');
+      if (note) {
+        note.textContent = trackerData.isFull
+          ? 'Данные из локального кэша трекера. Ничего не отправляется на сервер.'
+          : 'В кэше только часть истории, поэтому распределение может быть неполным. Откройте трекер, чтобы он загрузил все операции.';
+      }
+
+      var applyBtn = $('tracker-apply-income');
+      if (applyBtn) {
+        applyBtn.hidden = !(trackerData.avgIncome > 0);
+        applyBtn.addEventListener('click', function () {
+          if (!trackerData || !(trackerData.avgIncome > 0)) return;
+          $('le-net').value = Math.round(trackerData.avgIncome / 1000) * 1000;
+          update();
+        });
+      }
+
+      var cats = trackerData.rows.slice(0, 8).map(function (r) {
+        return r.cat;
+      });
+      return cats.length ? cats : null;
+    }
+
+    function renderAssessRows(cats) {
+      var rowsEl = $('le-assess-rows');
+      if (!rowsEl) return;
+      assessCats = cats;
+      assessState = {};
+      rowsEl.innerHTML = cats
+        .map(function (cat) {
+          return (
+            '<div class="le-assess-row" data-cat="' +
+            esc(cat) +
+            '">' +
+            '<div class="le-assess-name">' +
+            esc(cat) +
+            '</div>' +
+            ['sat', 'val', 'free']
+              .map(function (q) {
+                return (
+                  '<div class="le-assess-q">' +
+                  '<span class="le-assess-label">' +
+                  ASSESS_LABELS[q] +
+                  '</span>' +
+                  '<div class="le-arrows" role="group" aria-label="' +
+                  ASSESS_LABELS[q] +
+                  ' — ' +
+                  esc(cat) +
+                  '">' +
+                  '<button type="button" class="le-arrow" data-q="' +
+                  q +
+                  '" data-v="1" aria-label="↑ ' +
+                  ASSESS_ARIA[q][0] +
+                  '">↑</button>' +
+                  '<button type="button" class="le-arrow" data-q="' +
+                  q +
+                  '" data-v="0" aria-label="0 ' +
+                  ASSESS_ARIA[q][1] +
+                  '">0</button>' +
+                  '<button type="button" class="le-arrow" data-q="' +
+                  q +
+                  '" data-v="-1" aria-label="↓ ' +
+                  ASSESS_ARIA[q][2] +
+                  '">↓</button>' +
+                  '</div>' +
+                  '</div>'
+                );
+              })
+              .join('') +
+            '</div>'
+          );
+        })
+        .join('');
+
+      rowsEl.querySelectorAll('.le-arrow').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var row = btn.closest('.le-assess-row');
+          var cat = row.getAttribute('data-cat');
+          var q = btn.getAttribute('data-q');
+          var v = btn.getAttribute('data-v');
+          assessState[cat] = assessState[cat] || {};
+          assessState[cat][q] = v;
+          row.querySelectorAll('.le-arrow[data-q="' + q + '"]').forEach(function (b) {
+            b.classList.toggle('active', b === btn);
+          });
+          renderAssessSummary();
+        });
+      });
+      renderAssessSummary();
+    }
+
+    function renderAssessSummary() {
+      var el = $('le-assess-summary');
+      if (!el) return;
+      var answered = 0;
+      var html = ['sat', 'val', 'free']
+        .map(function (q) {
+          var up = 0;
+          var zero = 0;
+          var down = 0;
+          assessCats.forEach(function (cat) {
+            var v = assessState[cat] && assessState[cat][q];
+            if (v === '1') up++;
+            else if (v === '0') zero++;
+            else if (v === '-1') down++;
+            if (v !== undefined) answered++;
+          });
+          return (
+            '<div class="le-assess-summary-line"><b>' +
+            ASSESS_LABELS[q] +
+            '</b><span class="le-sum-up">↑ ' +
+            up +
+            '</span><span class="le-sum-zero">0 ' +
+            zero +
+            '</span><span class="le-sum-down">↓ ' +
+            down +
+            '</span></div>'
+          );
+        })
+        .join('');
+      el.innerHTML = answered
+        ? html
+        : '<span class="calc-note">Пока нет оценок. Отметьте хотя бы одну статью.</span>';
+    }
+
+    var trackerCats = renderTracker();
+    renderAssessRows(trackerCats || DEFAULT_CATS);
+
+    document.querySelectorAll('.calc-card input').forEach(function (input) {
+      input.addEventListener('input', update);
+      input.addEventListener('change', update);
+    });
+    document.querySelectorAll('input[name="le-purchase-mode"]').forEach(function (radio) {
+      radio.addEventListener('change', update);
+    });
+
+    update();
+  })();
+</script>
