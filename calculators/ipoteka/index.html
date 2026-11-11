@@ -1,0 +1,914 @@
+<!DOCTYPE html><html lang="ru"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ипотека: уменьшать срок или платёж — Финграм</title><meta name="description" content="Сравнение трёх стратегий досрочного погашения ипотеки: уменьшать срок, уменьшать платёж или уменьшать платёж с доплатой разницы. График и таблица платежей."><link rel="canonical" href="https://agladkikh.ru/calculators/ipoteka/"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta property="og:type" content="website"><meta property="og:title" content="Ипотека: уменьшать срок или платёж — Финграм"><meta property="og:description" content="Сравнение трёх стратегий досрочного погашения ипотеки: уменьшать срок, уменьшать платёж или уменьшать платёж с доплатой разницы. График и таблица платежей."><meta property="og:url" content="https://agladkikh.ru/calculators/ipoteka/"><meta property="og:image" content="https://agladkikh.ru/images/author.jpg"><meta property="og:site_name" content="Финграм"><meta property="og:locale" content="ru_RU"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Финграм","description":"Бесплатный трекер доходов, расходов и капитала на вашей Google Таблице. Блог о деньгах, привычках и решениях.","url":"https://agladkikh.ru/calculators/ipoteka/","email":"gladkikh.consult@mail.ru","areaServed":"RU","sameAs":["https://vk.ru/gladkikh_consult","https://www.b17.ru/agladkih/","https://profi.ru/profile/GladkikhAA22/"],"founder":{"@type":"Person","name":"Александр Гладких"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Финграм","url":"https://agladkikh.ru/","inLanguage":"ru-RU"}</script><script>
+          (function () {
+            var hosts = ['agladkikh.ru', 'www.agladkikh.ru', 'fingram-concult.github.io', 'fingram.ru', 'www.fingram.ru'];
+            if (hosts.indexOf(location.hostname) === -1) return;
+            (function (m, e, t, r, i, k, a) {
+              m[i] =
+                m[i] ||
+                function () {
+                  (m[i].a = m[i].a || []).push(arguments);
+                };
+              m[i].l = 1 * new Date();
+              for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                  return;
+                }
+              }
+              (k = e.createElement(t)),
+                (a = e.getElementsByTagName(t)[0]),
+                (k.async = 1),
+                (k.src = r),
+                a.parentNode.insertBefore(k, a);
+            })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+            ym(110540800, 'init', {
+              clickmap: true,
+              trackLinks: true,
+              accurateTrackBounce: true,
+              webvisor: true,
+            });
+          })();
+        </script><noscript><div><img src="https://mc.yandex.ru/watch/110540800" style="position:absolute; left:-9999px;" alt=""></div></noscript><link rel="stylesheet" href="/assets/about.CITqtOIk.css"></head> <body>  <header class="site-header"> <div class="container header-inner"> <a class="brand" href="/" aria-label="Финграм — на главную"> <span class="brand-mark">Ф</span> <span class="brand-name">Финграм</span> </a> <button class="nav-burger" type="button" data-nav-toggle aria-label="Открыть меню" aria-expanded="false"> <span></span><span></span><span></span> </button> <nav class="site-nav" aria-label="Основная навигация">  <div class="nav-item has-children"> <button class="nav-link" type="button" data-submenu-toggle aria-expanded="false"> Сервис <span class="nav-caret">▾</span> </button> <div class="nav-submenu"> <a href="/app/index.html#month">Месяц</a><a href="/app/index.html#year">Год</a><a href="/app/index.html#dynamics">Динамика</a><a href="/app/index.html#add">+ Запись</a><a href="/app/index.html#history">История</a><a href="/app/index.html#balance">Баланс</a><a href="/app/index.html#settings">Настройки</a> </div> </div> <div class="nav-sections-mobile"> <span class="nav-sections-title">Сервис</span> <div class="nav-sections-list"> <a href="/app/index.html#month">Месяц</a><a href="/app/index.html#year">Год</a><a href="/app/index.html#dynamics">Динамика</a><a href="/app/index.html#add">+ Запись</a><a href="/app/index.html#history">История</a><a href="/app/index.html#balance">Баланс</a><a href="/app/index.html#settings">Настройки</a> </div> </div> <a class="nav-link" href="/blog/"> Блог </a><a class="nav-link" href="/calculators/" aria-current="page"> Калькуляторы </a><a class="nav-link" href="/about/"> Обо мне </a><a class="nav-link" href="/consult/"> Консультация </a> </nav> </div> </header> <main>  <section class="page-head"> <div class="container"> <span class="eyebrow">Калькуляторы</span> <h1>Ипотека: срок или платёж?</h1> <p>
+Сравните три стратегии досрочного погашения. Здесь важно не только то, сколько процентов вы
+        заплатите, но и какой обязательный платёж останется у вас каждый месяц.
+</p> </div> </section> <section class="section"> <div class="container"> <div class="card"> <div class="card-title">Что сравниваем</div> <div class="mort-strategy-grid"> <div> <b>A. Уменьшать срок</b> <p>
+После досрочки платёж остаётся высоким, срок сокращается. Максимальная экономия на
+              процентах, но обязательная нагрузка не падает.
+</p> </div> <div> <b>B. Уменьшать платёж</b> <p>
+После досрочки банк снижает обязательный платёж, срок остаётся прежним. Платить легче,
+              но при прочих равных вы медленнее гасите долг.
+</p> </div> <div> <b>C. Платёж + разница</b> <p>
+Платёж снижается, но вы добровольно доплачиваете разницу, чтобы общая сумма в месяц
+              оставалась как в A. Результат как у A, но с меньшим обязательным платежом.
+</p> </div> </div> <p class="calc-note">
+Если в A и C вы вносите одинаковую общую сумму, срок и переплата совпадают. Разница — в
+          обязательном платеже и в том, нужно ли контролировать доплату вручную.
+</p> </div> </div> </section> <section class="section"> <div class="container"> <div class="card calc-card"> <h2>Параметры ипотеки</h2> <div class="calc-fields"> <label class="calc-field"> <span>Сумма кредита, ₽</span> <input class="form-input ip-input" id="ip-amount" type="number" min="0" step="10000" inputmode="numeric"> </label> <label class="calc-field"> <span>Ставка, % годовых</span> <input class="form-input ip-input" id="ip-rate" type="number" min="0" step="0.01" inputmode="decimal"> </label> <label class="calc-field"> <span>Срок, лет</span> <input class="form-input ip-input" id="ip-years" type="number" min="1" step="1" inputmode="numeric"> </label> <label class="calc-field"> <span>Досрочка в месяц, ₽ — необязательно</span> <input class="form-input ip-input" id="ip-monthly" type="number" min="0" step="1000" inputmode="numeric"> </label> <label class="calc-field"> <span>Досрочка раз в год, ₽ — необязательно</span> <input class="form-input ip-input" id="ip-yearly" type="number" min="0" step="1000" inputmode="numeric"> </label> </div> <p class="calc-note">
+Заполните сумму, ставку и срок. Досрочки можно не заполнять, заполнить только одну или обе.
+          Если заполнены обе, в месяцы годовой досрочки списывается месячная плюс годовая.
+</p> </div> </div> </section> <section class="section" id="ip-empty-section"> <div class="container"> <div class="card mort-empty">
+Заполните сумму кредита, ставку и срок — появится сравнение стратегий, график и таблица
+        платежей.
+</div> </div> </section> <div id="ip-results" hidden> <section class="section"> <div class="container"> <div class="mort-summary-grid" id="ip-summary"></div> <div class="card" style="margin-top:20px"> <div class="card-title">Остаток долга</div> <div class="calc-chart"> <canvas id="ip-chart"></canvas> </div> <p class="calc-note">
+A и C должны идти по одной линии: вы вносите одинаковую общую сумму. B платит меньше,
+            поэтому остаток снижается медленнее.
+</p> </div> </div> </section> <section class="section" id="ip-calm-section" hidden> <div class="container"> <div class="section-head" style="max-width:780px"> <span class="eyebrow">Цена спокойствия</span> <h2>Что вы получаете за разницу</h2> <p>
+Это не «правильно или неправильно». Это цена права платить меньше и иметь запас
+            прочности.
+</p> </div> <div class="mort-calm-grid" id="ip-calm"></div> </div> </section> <section class="section" id="ip-compare-section" hidden> <div class="container"> <div class="card"> <div class="card-title">Сравнение стратегий</div> <div class="calc-table-wrap"> <table class="calc-table"> <thead> <tr> <th>Показатель</th> <th>База</th> <th>A. Срок</th> <th>B. Платёж</th> <th>C. Платёж + разница</th> </tr> </thead> <tbody id="ip-compare-body"></tbody> </table> </div> <p class="calc-note" id="ip-compare-note"></p> </div> </div> </section> <section class="section" id="ip-schedule-section" hidden> <div class="container"> <div class="card"> <div class="card-title">График платежей</div> <div class="mort-toolbar"> <div class="mort-tabs" id="ip-strategy-tabs"> <button class="btn btn-sm btn-ghost mort-tab active" type="button" data-ip-strategy="a">A. Срок</button> <button class="btn btn-sm btn-ghost mort-tab" type="button" data-ip-strategy="b">B. Платёж</button> <button class="btn btn-sm btn-ghost mort-tab" type="button" data-ip-strategy="c">C. Платёж + разница</button> </div> <div class="mort-tabs" id="ip-granularity-tabs"> <button class="btn btn-sm btn-ghost mort-tab active" type="button" data-ip-granularity="year">По годам</button> <button class="btn btn-sm btn-ghost mort-tab" type="button" data-ip-granularity="month">Помесячно</button> </div> </div> <div class="calc-table-wrap"> <table class="calc-table"> <thead> <tr> <th id="ip-schedule-period">Год</th> <th>Обязательный платёж</th> <th>Досрочно</th> <th>Проценты</th> <th>Тело</th> <th>Остаток</th> <th>Платёж после</th> </tr> </thead> <tbody id="ip-schedule-body"></tbody> <tfoot id="ip-schedule-foot"></tfoot> </table> </div> <p class="calc-note" id="ip-schedule-note"></p> </div> </div> </section> </div> <section class="section"> <div class="container prose" style="max-width:760px"> <h2>Допущения</h2> <ul> <li>Платёж аннуитетный, ставка фиксированная.</li> <li>Досрочка вносится в дату платежа после начисления процентов.</li> <li>Годовая досрочка срабатывает в конце 12-го, 24-го и следующих месяцев.</li> <li>Комиссии, страховки, налоговые вычеты и изменение ставки не учтены.</li> <li>Правила банка могут отличаться: минимальная сумма досрочки, только в дату платежа, порядок пересчёта.</li> </ul> <p>
+Если выбрать «уменьшать срок», платёж остаётся прежним, а срок пересчитывается. Если выбрать
+        «уменьшать платёж», банк пересчитывает платёж на оставшийся первоначальный срок. В стратегии C
+        вы вносите ту же общую сумму, что и в A, но через меньший обязательный платёж и большую
+        досрочку.
+</p> </div> </section> <section class="section"> <div class="container"> <div class="cta-band"> <div> <h2>Хочется разобрать свою ипотеку?</h2> <p>В трекере можно вести расходы и снимки активов, а на консультации — обсудить досрочные погашения, подушку безопасности и запас прочности.</p> </div> <div class="cta-actions"> <a class="btn" href="mailto:gladkikh.consult@mail.ru?subject=%D0%9A%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D0%BE%20%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%BC%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%D0%B0%D0%BC&#38;body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80!%0A%0A%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E.%0A%0A%D0%A7%D1%82%D0%BE%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%3A%0A%0A%D0%A3%D0%B4%D0%BE%D0%B1%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%3A%0A">Записаться на консультацию</a> <a class="btn btn-ghost" href="https://vk.ru/gladkikh_consult" target="_blank" rel="noopener noreferrer">Написать в VK</a> </div> </div> </div> </section>  </main> <footer class="site-footer"> <div class="container"> <div class="footer-grid"> <div> <h4>Финграм</h4> <p style="margin:0 0 12px">Личные финансы без хаоса. Трекер на вашей Google Таблице. Если хочется обсудить деньги и привычки — консультация.</p> <p style="margin:0;font-size:14px">Данные хранятся только в вашей таблице — автор сервиса их не видит.</p> </div> <div> <h4>Разделы</h4> <div class="footer-links"> <a href="/">Главная</a> <a href="/app/index.html">Открыть сервис</a> <a href="/blog/">Блог</a> <a href="/calculators/">Калькуляторы</a> <a href="/about/">Обо мне</a> <a href="/consult/">Консультация</a> <a href="/privacy/">Политика конфиденциальности</a> </div> </div> <div> <h4>Связаться</h4> <div class="footer-links"> <a href="mailto:gladkikh.consult@mail.ru">gladkikh.consult@mail.ru</a> <a href="https://vk.ru/gladkikh_consult" target="_blank" rel="noopener noreferrer">ВКонтакте</a> <a href="https://www.b17.ru/agladkih/" target="_blank" rel="noopener noreferrer">b17.ru</a> <a href="https://profi.ru/profile/GladkikhAA22/" target="_blank" rel="noopener noreferrer">Profi.ru</a> </div> </div> </div> <div class="footer-bottom"> <span>© 2026 Александр Гладких. Все права защищены.</span> <span>Сделано с заботой о ваших деньгах.</span> </div> </div> </footer> <script>
+      (function () {
+        function ready(fn) {
+          if (document.readyState !== 'loading') fn();
+          else document.addEventListener('DOMContentLoaded', fn);
+        }
+
+        ready(function () {
+          var lightbox = null;
+
+          function ensureLightbox() {
+            if (lightbox) return lightbox;
+            lightbox = document.createElement('div');
+            lightbox.className = 'lightbox';
+            lightbox.innerHTML =
+              '<button class="lightbox-close" aria-label="Закрыть">×</button><img alt="">';
+            document.body.appendChild(lightbox);
+            lightbox.addEventListener('click', function (e) {
+              if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+                closeLightbox();
+              }
+            });
+            return lightbox;
+          }
+
+          function openLightbox(src, alt) {
+            var lb = ensureLightbox();
+            var img = lb.querySelector('img');
+            img.src = src;
+            img.alt = alt || '';
+            lb.classList.add('open');
+            document.body.style.overflow = 'hidden';
+          }
+
+          function closeLightbox() {
+            if (!lightbox) return;
+            lightbox.classList.remove('open');
+            document.body.style.overflow = '';
+          }
+
+          document.querySelectorAll('.prose img').forEach(function (img) {
+            img.addEventListener('click', function () {
+              openLightbox(img.currentSrc || img.src, img.alt);
+            });
+          });
+
+          document.querySelectorAll('[data-gallery]').forEach(function (gallery) {
+            var main = gallery.querySelector('[data-gallery-img]');
+            var caption = gallery.querySelector('[data-gallery-caption]');
+            var openBtn = gallery.querySelector('[data-gallery-open]');
+            var thumbs = Array.prototype.slice.call(
+              gallery.querySelectorAll('[data-gallery-thumb]'),
+            );
+            var prev = gallery.querySelector('[data-gallery-prev]');
+            var next = gallery.querySelector('[data-gallery-next]');
+            var index = 0;
+            if (!main || !thumbs.length) return;
+
+            function show(n, zoom) {
+              index = (n + thumbs.length) % thumbs.length;
+              var thumb = thumbs[index];
+              main.src = thumb.getAttribute('data-src');
+              main.alt = thumb.getAttribute('data-alt') || '';
+              if (caption) caption.textContent = thumb.getAttribute('data-caption') || '';
+              thumbs.forEach(function (t, i) {
+                t.classList.toggle('active', i === index);
+              });
+              if (zoom) openLightbox(main.src, main.alt);
+            }
+
+            if (prev)
+              prev.addEventListener('click', function () {
+                show(index - 1);
+              });
+            if (next)
+              next.addEventListener('click', function () {
+                show(index + 1);
+              });
+            thumbs.forEach(function (t, i) {
+              t.addEventListener('click', function () {
+                show(i);
+              });
+            });
+            if (openBtn)
+              openBtn.addEventListener('click', function () {
+                show(index, true);
+              });
+            show(0);
+          });
+
+          var siteHeader = document.querySelector('.site-header');
+          var burger = document.querySelector('[data-nav-toggle]');
+          if (burger && siteHeader) {
+            burger.addEventListener('click', function () {
+              var open = siteHeader.classList.toggle('nav-open');
+              burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+            });
+          }
+
+          document.querySelectorAll('[data-submenu-toggle]').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+              var item = btn.closest('.nav-item');
+              if (!item) return;
+              var open = item.classList.toggle('open');
+              btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+            });
+          });
+
+          document.addEventListener('click', function (e) {
+            if (!e.target.closest('.nav-item.has-children')) {
+              document.querySelectorAll('.nav-item.open').forEach(function (item) {
+                item.classList.remove('open');
+              });
+            }
+            if (siteHeader && !e.target.closest('.site-header')) {
+              siteHeader.classList.remove('nav-open');
+            }
+          });
+
+          document.querySelectorAll('.site-nav a').forEach(function (link) {
+            link.addEventListener('click', function () {
+              if (siteHeader) siteHeader.classList.remove('nav-open');
+            });
+          });
+
+          document.querySelectorAll('[data-app-preview]').forEach(function (preview) {
+            var tabs = Array.prototype.slice.call(
+              preview.querySelectorAll('[data-app-tab]'),
+            );
+            if (!tabs.length) return;
+            tabs.forEach(function (tab) {
+              tab.addEventListener('click', function () {
+                var key = tab.getAttribute('data-app-tab');
+                tabs.forEach(function (t) {
+                  t.classList.toggle('active', t === tab);
+                });
+                preview.querySelectorAll('[data-app-panel]').forEach(function (panel) {
+                  panel.classList.toggle(
+                    'active',
+                    panel.getAttribute('data-app-panel') === key,
+                  );
+                });
+              });
+            });
+          });
+
+          var videoModal = document.getElementById('video-modal');
+
+          function closeVideo() {
+            if (!videoModal) return;
+            videoModal.classList.remove('open');
+            document.body.style.overflow = '';
+            var frame = videoModal.querySelector('iframe');
+            if (frame) frame.src = 'about:blank';
+          }
+
+          document.querySelectorAll('[data-video-open]').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+              if (!videoModal) return;
+              var frame = videoModal.querySelector('iframe');
+              if (frame) frame.src = frame.getAttribute('data-video-src');
+              videoModal.classList.add('open');
+              document.body.style.overflow = 'hidden';
+            });
+          });
+
+          document.querySelectorAll('[data-video-close]').forEach(function (btn) {
+            btn.addEventListener('click', closeVideo);
+          });
+
+          if (videoModal) {
+            videoModal.addEventListener('click', function (e) {
+              if (e.target === videoModal) closeVideo();
+            });
+          }
+
+          document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+              closeLightbox();
+              closeVideo();
+            }
+          });
+
+          var returning = document.getElementById('returning');
+          if (returning) {
+            try {
+              var configured = !!(
+                localStorage.getItem('real_api_url') ||
+                localStorage.getItem('demo_mode') === 'true'
+              );
+              var dismissed = sessionStorage.getItem('returning_dismissed') === '1';
+              if (configured && !dismissed) returning.hidden = false;
+              if (configured) {
+                var cta = document.querySelector('[data-primary-cta]');
+                if (cta) cta.textContent = 'Продолжить работу →';
+              }
+            } catch (e) {}
+            var hide = returning.querySelector('[data-returning-close]');
+            if (hide)
+              hide.addEventListener('click', function () {
+                returning.hidden = true;
+                try {
+                  sessionStorage.setItem('returning_dismissed', '1');
+                } catch (e) {}
+              });
+          }
+        });
+      })();
+    </script> </body> </html> <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script> <script>
+  (function () {
+    var rub = new Intl.NumberFormat('ru-RU', {
+      style: 'currency',
+      currency: 'RUB',
+      maximumFractionDigits: 0,
+    });
+    var pctFmt = new Intl.NumberFormat('ru-RU', { maximumFractionDigits: 1 });
+    var compactRub = new Intl.NumberFormat('ru-RU', {
+      style: 'currency',
+      currency: 'RUB',
+      notation: 'compact',
+      maximumFractionDigits: 1,
+    });
+    var chart = null;
+    var state = { strategy: 'a', granularity: 'year', models: null, params: null };
+    var META = {
+      base: { label: 'База', subtitle: 'Без досрочек', color: '#94a3b8' },
+      a: { label: 'A', subtitle: 'Уменьшать срок', color: '#5b54e8' },
+      b: { label: 'B', subtitle: 'Уменьшать платёж', color: '#d97706' },
+      c: { label: 'C', subtitle: 'Платёж + разница', color: '#1f9d63' },
+    };
+
+    function $(id) {
+      return document.getElementById(id);
+    }
+
+    function hasValue(id) {
+      var el = $(id);
+      return !!(el && String(el.value).trim() !== '');
+    }
+
+    function num(id) {
+      var el = $(id);
+      if (!el) return 0;
+      var v = parseFloat(String(el.value).replace(',', '.'));
+      return isFinite(v) ? v : 0;
+    }
+
+    function fmt(n) {
+      return rub.format(isFinite(n) ? n : 0);
+    }
+
+    function fmtSigned(n) {
+      var v = isFinite(n) ? n : 0;
+      if (Math.abs(v) < 0.5) return '0 ₽';
+      return (v > 0 ? '+' : '−') + rub.format(Math.abs(v));
+    }
+
+    function plural(n, one, few, many) {
+      var abs = Math.abs(Math.round(n));
+      var n10 = abs % 10;
+      var n100 = abs % 100;
+      if (n10 === 1 && n100 !== 11) return one;
+      if (n10 >= 2 && n10 <= 4 && (n100 < 10 || n100 >= 20)) return few;
+      return many;
+    }
+
+    function fmtTerm(months) {
+      months = Math.max(0, Math.round(months));
+      var years = Math.floor(months / 12);
+      var rest = months % 12;
+      var parts = [];
+      if (years) parts.push(years + ' ' + plural(years, 'год', 'года', 'лет'));
+      if (rest) parts.push(rest + ' ' + plural(rest, 'месяц', 'месяца', 'месяцев'));
+      return parts.length ? parts.join(' ') : '0 мес.';
+    }
+
+    function annuity(principal, rate, months) {
+      if (months <= 0) return 0;
+      if (rate === 0) return principal / months;
+      return (principal * rate) / (1 - Math.pow(1 + rate, -months));
+    }
+
+    function simulate(params, strategy) {
+      var rate = params.monthlyRate;
+      var totalMonths = params.months;
+      var basePayment = annuity(params.amount, rate, totalMonths);
+      var balance = params.amount;
+      var payment = basePayment;
+      var schedule = [];
+      var totalPaid = 0;
+      var totalInterest = 0;
+      var totalExtra = 0;
+      var maxOutflow = 0;
+      var firstPrepayMonth = null;
+      var mandatoryAfterFirstPrepay = null;
+      var month = 0;
+      var maxMonths = totalMonths + 600;
+
+      while (balance > 0.005 && month < maxMonths) {
+        month++;
+        var extraBase =
+          strategy === 'base'
+            ? 0
+            : params.monthlyExtra + (month % 12 === 0 ? params.yearlyExtra : 0);
+        var interest = balance * rate;
+        var scheduled = Math.min(payment, balance + interest);
+        var desiredExtra = extraBase;
+        if (strategy === 'c') {
+          var target = basePayment + extraBase;
+          desiredExtra = Math.max(0, target - scheduled);
+        }
+        var room = Math.max(0, balance - (scheduled - interest));
+        var extra = Math.min(desiredExtra, room);
+        var total = scheduled + extra;
+        var principal = total - interest;
+        if (principal > balance) {
+          principal = balance;
+          total = principal + interest;
+          extra = Math.max(0, total - scheduled);
+        }
+        var newBalance = Math.max(0, balance - principal);
+
+        if (firstPrepayMonth === null && extra > 0.005) firstPrepayMonth = month;
+
+        totalPaid += total;
+        totalInterest += interest;
+        totalExtra += extra;
+        if (total > maxOutflow) maxOutflow = total;
+
+        var row = {
+          month: month,
+          payment: scheduled,
+          extra: extra,
+          interest: interest,
+          principal: principal,
+          balance: newBalance,
+          mandatoryAfter: 0,
+        };
+        balance = newBalance;
+
+        if (balance <= 0.005) {
+          schedule.push(row);
+          break;
+        }
+
+        var remaining = totalMonths - month;
+        if (strategy !== 'a' && strategy !== 'base') {
+          payment = remaining > 0 ? annuity(balance, rate, remaining) : balance * (1 + rate);
+        }
+        row.mandatoryAfter = payment;
+        schedule.push(row);
+
+        if (firstPrepayMonth === month) mandatoryAfterFirstPrepay = payment;
+      }
+
+      if (mandatoryAfterFirstPrepay === null && firstPrepayMonth !== null) {
+        mandatoryAfterFirstPrepay = 0;
+      }
+
+      return {
+        key: strategy,
+        basePayment: basePayment,
+        schedule: schedule,
+        months: schedule.length,
+        totalPaid: totalPaid,
+        totalInterest: totalInterest,
+        totalExtra: totalExtra,
+        maxOutflow: maxOutflow,
+        mandatoryAfterFirstPrepay: mandatoryAfterFirstPrepay,
+      };
+    }
+
+    function getParams() {
+      var amount = num('ip-amount');
+      var annual = num('ip-rate');
+      var years = num('ip-years');
+      var months = Math.round(years * 12);
+      var valid =
+        hasValue('ip-amount') &&
+        hasValue('ip-rate') &&
+        hasValue('ip-years') &&
+        amount > 0 &&
+        annual >= 0 &&
+        months > 0;
+      return {
+        amount: amount,
+        annual: annual,
+        years: years,
+        months: months,
+        monthlyRate: annual / 100 / 12,
+        monthlyExtra: Math.max(0, num('ip-monthly')),
+        yearlyExtra: Math.max(0, num('ip-yearly')),
+        valid: valid,
+      };
+    }
+
+    function renderSummary(models) {
+      var el = $('ip-summary');
+      if (!el) return;
+      el.innerHTML = ['base', 'a', 'b', 'c']
+        .map(function (key) {
+          var m = models[key];
+          var after =
+            m.mandatoryAfterFirstPrepay === null
+              ? '—'
+              : fmt(m.mandatoryAfterFirstPrepay);
+          return (
+            '<div class="card mort-summary-card">' +
+            '<div class="mort-summary-head"><span class="mort-dot" style="background:' +
+            META[key].color +
+            '"></span><b>' +
+            META[key].label +
+            '</b><span>' +
+            META[key].subtitle +
+            '</span></div>' +
+            '<div class="mort-summary-metrics">' +
+            '<div><span>Срок</span><b>' +
+            fmtTerm(m.months) +
+            '</b></div>' +
+            '<div><span>Проценты</span><b>' +
+            fmt(m.totalInterest) +
+            '</b></div>' +
+            '<div><span>Всего выплачено</span><b>' +
+            fmt(m.totalPaid) +
+            '</b></div>' +
+            '<div><span>Платёж сейчас</span><b>' +
+            fmt(m.basePayment) +
+            '</b></div>' +
+            '<div><span>После 1-й досрочки</span><b>' +
+            after +
+            '</b></div>' +
+            '</div>' +
+            '</div>'
+          );
+        })
+        .join('');
+    }
+
+    function avgTopUpOverB(c, b) {
+      var sum = 0;
+      var count = 0;
+      c.schedule.forEach(function (row, index) {
+        var other = b.schedule[index];
+        if (!other) return;
+        sum += row.payment + row.extra - (other.payment + other.extra);
+        count++;
+      });
+      return count ? sum / count : 0;
+    }
+
+    function renderCalm(models) {
+      var el = $('ip-calm');
+      if (!el) return;
+      var a = models.a;
+      var b = models.b;
+      var c = models.c;
+      var extraInterest = b.totalInterest - a.totalInterest;
+      var laterMonths = b.months - a.months;
+      var lowerPayment = (a.mandatoryAfterFirstPrepay || 0) - (b.mandatoryAfterFirstPrepay || 0);
+      var cExtraAvg = avgTopUpOverB(c, b);
+      var cDiff = c.totalInterest - a.totalInterest;
+
+      el.innerHTML =
+        '<div class="card mort-calm-card">' +
+        '<div class="mort-calm-label">A. Уменьшать срок</div>' +
+        '<div class="mort-calm-value">' +
+        fmtSigned(models.base.totalInterest - a.totalInterest) +
+        '</div>' +
+        '<p>Экономия процентов относительно базы. Обязательный платёж после досрочки — ' +
+        fmt(a.mandatoryAfterFirstPrepay || 0) +
+        '.</p>' +
+        '</div>' +
+        '<div class="card mort-calm-card">' +
+        '<div class="mort-calm-label">B. Цена спокойствия</div>' +
+        '<div class="mort-calm-value">' +
+        fmtSigned(extraInterest) +
+        '</div>' +
+        '<p>На столько больше процентов, если платить только по новому графику. Закрытие позже на ' +
+        laterMonths +
+        ' ' +
+        plural(laterMonths, 'месяц', 'месяца', 'месяцев') +
+        ', обязательный платёж ниже на ' +
+        fmt(lowerPayment) +
+        '.</p>' +
+        '</div>' +
+        '<div class="card mort-calm-card">' +
+        '<div class="mort-calm-label">C. Платёж + разница</div>' +
+        '<div class="mort-calm-value">' +
+        (Math.abs(cDiff) < 1 ? 'Как A' : fmtSigned(cDiff)) +
+        '</div>' +
+        '<p>Обязательный платёж ниже, чем в A, результат как в A. В среднем нужно добровольно доплачивать ' +
+        fmt(cExtraAvg) +
+        ' в месяц сверх B.</p>' +
+        '</div>';
+    }
+
+    function renderCompare(models) {
+      var body = $('ip-compare-body');
+      if (!body) return;
+      var keys = ['base', 'a', 'b', 'c'];
+      var rows = [
+        {
+          label: 'Срок',
+          value: function (m) {
+            return fmtTerm(m.months);
+          },
+        },
+        {
+          label: 'Всего выплачено',
+          value: function (m) {
+            return fmt(m.totalPaid);
+          },
+        },
+        {
+          label: 'Проценты',
+          value: function (m) {
+            return fmt(m.totalInterest);
+          },
+        },
+        {
+          label: 'Досрочно внесено',
+          value: function (m) {
+            return fmt(m.totalExtra);
+          },
+        },
+        {
+          label: 'Экономия процентов vs база',
+          value: function (m) {
+            return m.key === 'base' ? '—' : fmtSigned(models.base.totalInterest - m.totalInterest);
+          },
+        },
+        {
+          label: 'Обязательный платёж после 1-й досрочки',
+          value: function (m) {
+            return m.mandatoryAfterFirstPrepay === null ? '—' : fmt(m.mandatoryAfterFirstPrepay);
+          },
+        },
+        {
+          label: 'Максимальный платёж в месяц',
+          value: function (m) {
+            return fmt(m.maxOutflow);
+          },
+        },
+      ];
+
+      body.innerHTML = rows
+        .map(function (row) {
+          return (
+            '<tr><td>' +
+            row.label +
+            '</td>' +
+            keys
+              .map(function (key) {
+                return '<td>' + row.value(models[key]) + '</td>';
+              })
+              .join('') +
+            '</tr>'
+          );
+        })
+        .join('');
+
+      var note = $('ip-compare-note');
+      if (note) {
+        if (models.a.totalExtra <= 0.005) {
+          note.textContent = 'Досрочки не заданы — все стратегии совпадают.';
+        } else {
+          note.textContent =
+            'A и C должны совпадать по сроку и процентам: в C вы вносите ту же общую сумму, что и в A, но через меньший обязательный платёж и большую досрочку. Сумма досрочки у B может быть больше, потому что срок дольше.';
+        }
+      }
+    }
+
+    function scheduleRows(model, granularity) {
+      if (granularity === 'month') {
+        return model.schedule.map(function (r) {
+          return {
+            label: 'Месяц ' + r.month,
+            payment: r.payment,
+            extra: r.extra,
+            interest: r.interest,
+            principal: r.principal,
+            balance: r.balance,
+            after: r.mandatoryAfter,
+          };
+        });
+      }
+
+      var rows = [];
+      for (var i = 0; i < model.schedule.length; i += 12) {
+        var chunk = model.schedule.slice(i, i + 12);
+        var last = chunk[chunk.length - 1];
+        rows.push({
+          label: 'Год ' + (Math.floor(i / 12) + 1),
+          payment: chunk.reduce(function (s, r) {
+            return s + r.payment;
+          }, 0),
+          extra: chunk.reduce(function (s, r) {
+            return s + r.extra;
+          }, 0),
+          interest: chunk.reduce(function (s, r) {
+            return s + r.interest;
+          }, 0),
+          principal: chunk.reduce(function (s, r) {
+            return s + r.principal;
+          }, 0),
+          balance: last.balance,
+          after: last.mandatoryAfter,
+        });
+      }
+      return rows;
+    }
+
+    function renderSchedule(models) {
+      var model = models[state.strategy];
+      if (!model) return;
+      var body = $('ip-schedule-body');
+      var foot = $('ip-schedule-foot');
+      var period = $('ip-schedule-period');
+      if (!body || !foot) return;
+
+      var isYear = state.granularity === 'year';
+      if (period) period.textContent = isYear ? 'Год' : 'Месяц';
+
+      var rows = scheduleRows(model, state.granularity);
+      body.innerHTML = rows
+        .map(function (r) {
+          return (
+            '<tr><td>' +
+            r.label +
+            '</td><td>' +
+            fmt(r.payment) +
+            '</td><td>' +
+            fmt(r.extra) +
+            '</td><td>' +
+            fmt(r.interest) +
+            '</td><td>' +
+            fmt(r.principal) +
+            '</td><td>' +
+            fmt(r.balance) +
+            '</td><td>' +
+            (r.after > 0.005 ? fmt(r.after) : '—') +
+            '</td></tr>'
+          );
+        })
+        .join('');
+
+      var totalPayment = model.totalPaid - model.totalExtra;
+      foot.innerHTML =
+        '<tr><td>Итого</td><td>' +
+        fmt(totalPayment) +
+        '</td><td>' +
+        fmt(model.totalExtra) +
+        '</td><td>' +
+        fmt(model.totalInterest) +
+        '</td><td>' +
+        fmt(state.params.amount) +
+        '</td><td>0 ₽</td><td>—</td></tr>';
+
+      var note = $('ip-schedule-note');
+      if (note) {
+        note.textContent =
+          'Стратегия ' +
+          META[state.strategy].label +
+          ': ' +
+          META[state.strategy].subtitle +
+          '. ' +
+          (isYear
+            ? 'В строках по годам суммы платежей и процентов сложены за 12 месяцев.'
+            : 'Помесячный график: платёж, досрочка, проценты, тело долга и остаток.');
+      }
+    }
+
+    function renderChart(models, params) {
+      var canvas = $('ip-chart');
+      if (!canvas || typeof Chart === 'undefined') return;
+      if (chart) chart.destroy();
+
+      var maxLen = Math.max(
+        models.base.schedule.length,
+        models.a.schedule.length,
+        models.b.schedule.length,
+        models.c.schedule.length,
+      );
+      var labels = [];
+      for (var i = 0; i <= maxLen; i++) labels.push(String(i));
+
+      function series(model) {
+        var values = [params.amount];
+        model.schedule.forEach(function (r) {
+          values.push(r.balance);
+        });
+        while (values.length <= maxLen) values.push(null);
+        return values;
+      }
+
+      chart = new Chart(canvas.getContext('2d'), {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              label: 'База',
+              data: series(models.base),
+              borderColor: META.base.color,
+              borderDash: [5, 4],
+              borderWidth: 2,
+              pointRadius: 0,
+              tension: 0.15,
+              fill: false,
+            },
+            {
+              label: 'A. Срок',
+              data: series(models.a),
+              borderColor: META.a.color,
+              borderWidth: 2,
+              pointRadius: 0,
+              tension: 0.15,
+              fill: false,
+            },
+            {
+              label: 'B. Платёж',
+              data: series(models.b),
+              borderColor: META.b.color,
+              borderWidth: 2,
+              pointRadius: 0,
+              tension: 0.15,
+              fill: false,
+            },
+            {
+              label: 'C. Платёж + разница',
+              data: series(models.c),
+              borderColor: META.c.color,
+              borderDash: [5, 4],
+              borderWidth: 2,
+              pointRadius: 0,
+              tension: 0.15,
+              fill: false,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: { labels: { color: '#5d6475', font: { size: 12 } } },
+            tooltip: {
+              callbacks: {
+                title: function (items) {
+                  var idx = items.length ? items[0].dataIndex : 0;
+                  return 'Месяц ' + idx;
+                },
+                label: function (c) {
+                  return ' ' + c.dataset.label + ': ' + (c.raw === null ? '—' : fmt(c.raw));
+                },
+              },
+            },
+          },
+          scales: {
+            x: {
+              ticks: { color: '#5d6475', font: { size: 11 }, maxTicksLimit: 15 },
+              grid: { color: 'rgba(20,22,29,0.07)' },
+            },
+            y: {
+              ticks: {
+                color: '#5d6475',
+                font: { size: 11 },
+                callback: function (v) {
+                  return compactRub.format(v);
+                },
+              },
+              grid: { color: 'rgba(20,22,29,0.07)' },
+            },
+          },
+        },
+      });
+    }
+
+    function update() {
+      var params = getParams();
+      var results = $('ip-results');
+      var empty = $('ip-empty-section');
+      var calmSection = $('ip-calm-section');
+      var compareSection = $('ip-compare-section');
+      var scheduleSection = $('ip-schedule-section');
+
+      if (!params.valid) {
+        if (results) results.hidden = true;
+        if (empty) empty.hidden = false;
+        if (calmSection) calmSection.hidden = true;
+        if (compareSection) compareSection.hidden = true;
+        if (scheduleSection) scheduleSection.hidden = true;
+        if (chart) {
+          chart.destroy();
+          chart = null;
+        }
+        state.models = null;
+        state.params = null;
+        return;
+      }
+
+      var models = {
+        base: simulate(params, 'base'),
+        a: simulate(params, 'a'),
+        b: simulate(params, 'b'),
+        c: simulate(params, 'c'),
+      };
+      state.models = models;
+      state.params = params;
+
+      if (empty) empty.hidden = true;
+      if (results) results.hidden = false;
+      if (compareSection) compareSection.hidden = false;
+      if (scheduleSection) scheduleSection.hidden = false;
+
+      renderSummary(models);
+      renderCompare(models);
+      renderSchedule(models);
+      renderChart(models, params);
+
+      var hasPrepay = models.a.totalExtra > 0.005;
+      if (calmSection) calmSection.hidden = !hasPrepay;
+      if (hasPrepay) renderCalm(models);
+    }
+
+    document.querySelectorAll('.ip-input').forEach(function (input) {
+      input.addEventListener('input', update);
+      input.addEventListener('change', update);
+    });
+
+    document.querySelectorAll('[data-ip-strategy]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        state.strategy = btn.getAttribute('data-ip-strategy');
+        document.querySelectorAll('[data-ip-strategy]').forEach(function (b) {
+          b.classList.toggle('active', b === btn);
+        });
+        if (state.models) renderSchedule(state.models);
+      });
+    });
+
+    document.querySelectorAll('[data-ip-granularity]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        state.granularity = btn.getAttribute('data-ip-granularity');
+        document.querySelectorAll('[data-ip-granularity]').forEach(function (b) {
+          b.classList.toggle('active', b === btn);
+        });
+        if (state.models) renderSchedule(state.models);
+      });
+    });
+
+    update();
+  })();
+</script>
