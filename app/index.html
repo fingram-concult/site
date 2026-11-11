@@ -97,6 +97,9 @@
     /* CARD */
     .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin-bottom: 16px; }
     .card-title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text2); margin-bottom: 12px; }
+    #page-settings .card-title { font-size: 15px; text-transform: none; letter-spacing: 0; color: var(--text); font-weight: 700; }
+    #page-settings .card-title[onclick] { padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+    #page-settings .card-title[onclick]:hover { color: var(--accent); }
 
     /* STATS */
     .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 16px; }
@@ -653,7 +656,7 @@
 <div class="page" id="page-settings">
   <div class="card">
     <div class="card-title" style="display:flex;align-items:center;justify-content:space-between;cursor:pointer" onclick="toggleAbout()">
-      <span>🛈 О приложении</span>
+      <span>🛈 О трекере</span>
       <span id="about-arrow" style="font-size:12px;color:var(--text2)">▸</span>
     </div>
     <div id="about-block" style="display:none;font-size:13px;line-height:1.7;color:var(--text2)">
@@ -674,7 +677,7 @@
       </div>
       <div style="margin-top:10px">
         <div style="font-weight:500;color:var(--text);margin-bottom:2px">Я потерял ссылку на скрипт, что делать?</div>
-        <div>Ничего страшного. Откройте таблицу → «Расширения» → «Apps Script» → «Развернуть» → «Новое развертывание» → скопируйте новую ссылку и замените её в настройках приложения. Все данные останутся на месте.</div>
+        <div>Ничего страшного. Откройте таблицу → «Расширения» → «Apps Script» → «Начать развертывание» → «Управление развертываниями» → в блоке «Веб-приложение» скопируйте ссылку и укажите её в настройках приложения. Все данные останутся на месте.</div>
       </div>
       <div style="margin-top:10px">
         <div style="font-weight:500;color:var(--text);margin-bottom:2px">Можно ли потерять данные?</div>
